@@ -9,7 +9,7 @@ function scratchWeb() {
   } else if (time <= 840 || time >= 1600) {
     return "scratch.mit.edu/projects/";
   } else {
-    return "turbowarp.org/"; // Change this back when Turbowarp is back up and running
+    return "scratch.mit.edu/projects/"; // Change this back when Turbowarp is back up and running
   };
 };
 
