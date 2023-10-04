@@ -29,7 +29,7 @@ function changeScratchGame(game) {
 };
 
 function changeOtherGame(game) {
-  let otherGameDict = {"Bandit Rip": "https://bandit.rip/"};
+  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
   document.getElementById("introText").innerHTML = "";
