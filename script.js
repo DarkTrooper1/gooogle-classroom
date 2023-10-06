@@ -60,3 +60,13 @@ function changeConstructGame(game) {
 function escape() {
   window.location.href = "https://classroom.google.com/h";
 };
+
+function openWindow(game) {
+  var win = window.open();
+  var iframe = win.document.createElement('iframe');
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
+  iframe.style.border = "none";
+  iframe.src = game;
+  win.document.body.appendChild(iframe);
+};
