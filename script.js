@@ -58,5 +58,5 @@ function changeConstructGame(game) {
 };
 
 function escape() {
-  window.close();
+  close();
 };
