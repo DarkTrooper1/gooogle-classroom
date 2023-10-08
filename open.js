@@ -11,7 +11,12 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-password = prompt("Please enter password: ")
+password = prompt("Please enter password: ");
 if (password == "darktrooper") {
-  openWin()
-}
+  openWin();
+} else {
+  incorrect = document.getElementById('incorrerct');
+  incorrect.innerHTML = "Incorrect password";
+  incText = document.getElementById('incText');
+  inctext.innerHTML = "That password was incorrect. Please contact me if you want the correct password."
+};
