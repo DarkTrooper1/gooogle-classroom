@@ -20,5 +20,6 @@ function processForm() {
     alert('That password is incorrect.');
     let form = document.getElementById('form');
     form.remove()
+    document.createElement('h1').value = "Incorrect password."
   };
 };
