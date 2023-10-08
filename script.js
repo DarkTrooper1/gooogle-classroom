@@ -58,5 +58,5 @@ function changeConstructGame(game) {
 };
 
 function escape() {
-  window.location.replace("https://classroom.google.com/");
+  window.location.href("https://classroom.google.com/");
 };
