@@ -56,7 +56,3 @@ function changeConstructGame(game) {
   let element = document.getElementById(game);
   element.classList.add("active");
 };
-
-function escape() {
-  window.close();
-};
