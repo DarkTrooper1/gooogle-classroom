@@ -15,7 +15,6 @@ password = prompt("Please enter password: ");
 if (password == "darktrooper") {
   openWin();
 } else {
-  alert('Wrong')
-  // wait(8000);
+  alert('That password is incorrect. You will now be redirected to your  Google Classroom.')
   window.location.replace("https://classroom.google.com/");
 }
