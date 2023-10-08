@@ -12,10 +12,12 @@
 <body>
 <script src="open.js"></script>
   <br>
-  <form onsubmit="return processForm()" id="form">
-    <label for="password">Enter password here: </label>
-    <input class="input" type="text" id="password" required>
-    <button type="submit">Submit</button>
-  </form>
+  <div class="form">
+    <form onsubmit="return processForm()" id="form">
+      <label for="password">Enter password here: </label>
+      <input type="text" id="password" required>
+      <input class="submit" type="submit">
+    </form>
+  </div>
 </body>
 </html>
