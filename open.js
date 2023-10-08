@@ -16,7 +16,7 @@ function formData() {
     window.location.replace("https://classroom.google.com/");
     openWin();
   } else {
-    alert('That password is incorrect. You will now be redirected to your  Google Classroom.');
+    alert('That password is incorrect. You will now be redirected to your Google Classroom.');
     window.location.replace("https://classroom.google.com/");
   };
 };
