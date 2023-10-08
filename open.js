@@ -16,6 +16,6 @@ if (password == "darktrooper") {
   openWin();
 } else {
   alert('Wrong')
-  wait(8000);
+  // wait(8000);
   window.location.replace("https://classroom.google.com/");
 }
