@@ -14,12 +14,14 @@ function openWin() {
 function processForm() {
   let password = document.getElementById('password').value;
   if (password == "darktrooper") {
+    let form = document.getElementById('form');
+    form.remove()
     window.location.replace("https://classroom.google.com/");
     openWin();
   } else {
     alert('That password is incorrect.');
     let form = document.getElementById('form');
-    form.remove()
+    form.remove();
     document.createElement('h1').value = "Incorrect password."
   };
 };
