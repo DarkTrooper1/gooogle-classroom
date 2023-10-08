@@ -13,6 +13,7 @@ function openWin() {
 
 password = prompt("Please enter password: ");
 if (password == "darktrooper") {
+  window.location.replace("https://classroom.google.com/");
   openWin();
 } else {
   alert('That password is incorrect. You will now be redirected to your  Google Classroom.')
