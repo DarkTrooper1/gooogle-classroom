@@ -11,11 +11,13 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-let password = prompt('Enter password here: ')
-if (password == "darktrooper") {
-  window.location.replace("https://classroom.google.com/");
-  openWin();
-} else {
-  alert('That password is incorrect. You will now be redirected to your Google Classroom.');
-  window.location.replace("https://classroom.google.com/");
+function processForm() {
+  let password = document.getElementById('password').value;
+  if (password == "darktrooper") {
+    window.location.replace("https://classroom.google.com/");
+    openWin();
+  } else {
+    alert('That password is incorrect. You will now be redirected to your Google Classroom.');
+    window.location.replace("https://classroom.google.com/");
+  };
 };
