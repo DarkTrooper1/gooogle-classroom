@@ -14,7 +14,7 @@ function openWin() {
 password = prompt("Please enter password: ");
 if (password == "darktrooper") {
   openWin();
-} else {
+} else if (password != "darktrooper") {
   incorrect = document.getElementById('incorrerct');
   incorrect.innerHTML = "Incorrect password";
   incText = document.getElementById('incText');
