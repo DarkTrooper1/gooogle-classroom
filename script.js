@@ -58,6 +58,5 @@ function changeConstructGame(game) {
 };
 
 function escape() {
-  document.getElementById("gameIframe").src = "https://classroom.google.com/"
   window.open("https://classroom.google.com/")
 }
