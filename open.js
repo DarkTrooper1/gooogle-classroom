@@ -10,8 +10,6 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-} 
-
 function formData() {
   let password = document.forms['passwordForm']['password'].value;
   if (password == "darktrooper") {
