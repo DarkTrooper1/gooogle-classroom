@@ -115,3 +115,34 @@ iframe {
     min-width: 196px;
   }
 }
+
+div.form
+{
+  display: block;
+  text-align: center;
+}
+
+form
+{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+input {
+  border-radius: 40px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  
+}
+
+.submit {
+  border: none;
+  background-color: #0400ff;
+  color: white;
+}
+.submit:hover {
+  background-color: #006eff;
+}
+
