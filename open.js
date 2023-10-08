@@ -1,5 +1,5 @@
 function openWin() {
-  window.close();
+  open(location, '_self').close();
   var win = window.open();
   var iframe = win.document.createElement('iframe');
   win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
