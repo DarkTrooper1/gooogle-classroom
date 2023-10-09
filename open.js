@@ -1,4 +1,3 @@
-var popup = false
 function openWin() {
   var win = window.open();
   var iframe = win.document.createElement('iframe');
@@ -11,19 +10,12 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-function popupBlocked() {
-  let text = document.getElementById('popup');
-  text.innerHTML = 'Now enter the password again, and click on the top right hand corner where it says "popup blocked". Then set it to the other value available, and try one last time. If it still doesn't work after that, please contact me and I will attempt to fix it.'
-  popup = true
-};
-
 function processForm() {
   let password = document.getElementById('password').value;
   if (password == "darktrooper") {
     let form = document.getElementById('form');
     form.remove();
-    if (popup = false) {
-      window.location.replace("https://classroom.google.com/");
+    window.location.replace("https://classroom.google.com/");
     }
     openWin();
   } else {
