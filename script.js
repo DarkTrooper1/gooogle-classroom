@@ -83,6 +83,7 @@ function processForm() {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
     form.remove();
-    document.createElement('h1').value = "Incorrect password."
+    h1 = document.createElement('h1').value = "Incorrect password."
+    document.body.appendChild(h1)
   };
 };
