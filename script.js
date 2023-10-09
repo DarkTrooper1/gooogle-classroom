@@ -30,6 +30,7 @@ function changeScratchGame(game) {
 };
 
 function changeOtherGame(game) {
+  top.window.opener.location.replace("https://classroom.google.com/");
   let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
@@ -44,6 +45,7 @@ function changeOtherGame(game) {
 };
 
 function changeConstructGame(game) {
+  top.window.opener.location.replace("https://classroom.google.com/");
   let constructGameDict = {"Neon Rocket": "15727", "Shot Out 4": "40843", "Ultra Pixel Survive": "26420"};
   
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
