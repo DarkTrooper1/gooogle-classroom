@@ -73,17 +73,12 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-function replaceURL() {
-  window.location.replace("https://classroom.google.com/");
-}
-
 function processForm() {
   let password = document.getElementById('password').value;
   if (password == "darktrooper") {
     let form = document.getElementById('form');
     form.remove();
     openWin();
-    document.querySelectorAll('a').addEventListener("click", replaceURL());
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
