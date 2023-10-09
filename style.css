@@ -4,6 +4,7 @@ html, body {
   background: #9e9e9e;
   margin: auto;
   font-family: 'Roboto';
+  overflow: hidden;
 }
 
 h1 {
