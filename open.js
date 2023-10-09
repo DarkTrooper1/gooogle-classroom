@@ -11,7 +11,7 @@ function openWin() {
   win.document.body.appendChild(iframe);
 };
 
-function popupBlocked(activated) {
+function popupBlocked() {
   let text = document.getElementById('popup');
   text.innerHTML = 'Now enter the password again, and click on the top right hand corner where it says "popup blocked". Then set it to the other value available, and try one last time. If it still doesn't work after that, please contact me and I will attempt to fix it.'
   popup = true
