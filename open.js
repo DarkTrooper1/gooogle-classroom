@@ -1,5 +1,4 @@
 function openWin() {
-  window.location.replace("https://classroom.google.com/");
   var win = window.open();
   var iframe = win.document.createElement('iframe');
   win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
@@ -15,7 +14,7 @@ function processForm() {
   let password = document.getElementById('password').value;
   if (password == "darktrooper") {
     let form = document.getElementById('form');
-    form.remove()
+    form.remove();
     window.location.replace("https://classroom.google.com/");
     openWin();
   } else {
