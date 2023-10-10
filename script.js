@@ -17,7 +17,7 @@ function scratchWeb() {
 
 function changeScratchGame(game) {
   count = count + 1;
-  if (count > 1) {
+  if (count = 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
 
