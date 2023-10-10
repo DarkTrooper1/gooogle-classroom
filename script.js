@@ -105,7 +105,7 @@ function processForm() {
 function openEZ() {
   var winwin = window.open();
   var iframey = win.document.createElement('iframe');
-  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
+  winwin.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
   iframey.style.width = "100%";
   iframey.style.height = "100%";
   iframey.style.border = "none";
