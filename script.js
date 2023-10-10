@@ -101,3 +101,15 @@ function processForm() {
   };
 };
 // window.location.replace("https://classroom.google.com/");
+
+function openEZ() {
+  var winwin = window.open();
+  var iframey = win.document.createElement('iframe');
+  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
+  iframey.style.width = "100%";
+  iframey.style.height = "100%";
+  iframey.style.border = "none";
+  iframey.frameBorder = 0;
+  iframey.src = "https://sites.google.com/site/unblockedgames66ez/";
+  winwin.document.body.appendChild(iframe);
+}
