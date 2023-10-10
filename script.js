@@ -111,5 +111,5 @@ function openEZ() {
   iframey.style.border = "none";
   iframey.frameBorder = 0;
   iframey.src = "https://sites.google.com/site/unblockedgames66ez/";
-  winwin.document.body.appendChild(iframe);
+  winwin.document.body.appendChild(iframey);
 }
