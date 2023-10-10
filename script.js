@@ -36,11 +36,11 @@ function changeScratchGame(game) {
 };
 
 function changeOtherGame(game) {
-   count = count + 1;
+count = count + 1;
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en"};
+  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Retro Bowl": "https://replit.com/@CAMERONMUSGRAVE/Retro-Bowl"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
   document.getElementById("introText").innerHTML = "";
@@ -54,11 +54,11 @@ function changeOtherGame(game) {
 };
 
 function changeConstructGame(game) {
-   count = count + 1;
+  count = count + 1;
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let constructGameDict = {"Neon Rocket": "15727", "Shot Out 4": "40843", "Ultra Pixel Survive": "26420"};
+  let constructGameDict = {"Neon Rocket": "15727", "Ultra Pixel Survive": "26420"};
   
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
   document.getElementById("title").innerHTML = game;
