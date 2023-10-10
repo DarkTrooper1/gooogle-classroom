@@ -17,7 +17,7 @@ function scratchWeb() {
 
 function changeScratchGame(game) {
   count = count + 1;
-  if (count = 1) {
+  if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
 
@@ -37,7 +37,7 @@ function changeScratchGame(game) {
 
 function changeOtherGame(game) {
    count = count + 1;
-  if (count > 1) {
+  if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
   let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en"};
@@ -55,7 +55,7 @@ function changeOtherGame(game) {
 
 function changeConstructGame(game) {
    count = count + 1;
-  if (count > 1) {
+  if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
   let constructGameDict = {"Neon Rocket": "15727", "Shot Out 4": "40843", "Ultra Pixel Survive": "26420"};
