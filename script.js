@@ -95,7 +95,7 @@ function processForm() {
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
   } else if (password == "classroom") {
-    window.location.replace("https://classroom.google.com/");
+    top.window.opener.location.replace("https://classroom.google.com/");
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
