@@ -76,7 +76,7 @@ function escape() {
   window.open("https://classroom.google.com/");
 };
 
-function openWin() {
+function openWin(link) {
   var win = window.open();
   var iframe = win.document.createElement('iframe');
   win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
@@ -84,7 +84,7 @@ function openWin() {
   iframe.style.height = "100%";
   iframe.style.border = "none";
   iframe.frameBorder = 0;
-  iframe.src = "https://gooogle-classroom.vercel.app/home.html";
+  iframe.src = link;
   win.document.body.appendChild(iframe);
 };
 
@@ -93,7 +93,9 @@ function processForm() {
   if (password == "darktrooper") {
     let form = document.getElementById('form');
     form.remove();
-    openWin();
+    openWin("https://gooogle-classroom.vercel.app/home.html");
+  } else if (password == "classroom") {
+    openWin("https://classroom.google.com/");
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
