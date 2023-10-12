@@ -41,6 +41,9 @@ p {
   font-size: 25px;
   font-family: 'Times New Roman';
 }
+.introText {
+  color: #FF0000;
+}
 
 iframe {
   display: block;
