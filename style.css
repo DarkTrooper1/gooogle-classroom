@@ -41,7 +41,7 @@ p {
   font-size: 25px;
   font-family: 'Times New Roman';
 }
-.introText {
+.introText-Escape {
   color: #FF0000;
 }
 
@@ -62,11 +62,6 @@ iframe {
   background-color: #000099;
   color: white;
 }
-
-.escape {
-  color: red;
-}
-
 .button-64 {
   align-items: center;
   background-image: linear-gradient(144deg,#008080, #ff00d0 50%,#FFD700);
