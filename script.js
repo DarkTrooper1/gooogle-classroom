@@ -86,6 +86,7 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
+  top.window.opener.location.replace("https://classroom.google.com/");
 };
 
 function processForm() {
