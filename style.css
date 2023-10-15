@@ -41,8 +41,11 @@ p {
   font-size: 25px;
   font-family: 'Times New Roman';
 }
-.introText-Escape {
+.introText {
   color: #0000ff;
+}
+.escape {
+  color: #FF0000;
 }
 
 iframe {
