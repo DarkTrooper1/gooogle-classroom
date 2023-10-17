@@ -40,7 +40,7 @@ function changeOtherGame(game) {
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Retro Bowl": "https://replit.com/@CAMERONMUSGRAVE/Retro-Bowl", "Pixel Shooter": "https://sites.google.com/site/unblockedgame76/pixel-shooter"};
+  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
   document.getElementById("introText").innerHTML = "";
