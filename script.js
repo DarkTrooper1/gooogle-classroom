@@ -117,7 +117,7 @@ function changeYoutube(tube) {
   
   document.getElementById("youtubeIframe").src = "https://www.youtube.com/embed/".concat(youtubeDict[tube]);
   document.getElementById("title").innerHTML = tube;
-  document.getElementById("introText").innerHTML = "";
+  document.getElementById("introText").remove();
 
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
