@@ -121,7 +121,7 @@ function changeYoutube(tube) {
 
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
-	  elem.classList.remove('active');
+    elem.classList.remove('active');
   };
   let element = document.getElementById(game);
   element.classList.add("active");
