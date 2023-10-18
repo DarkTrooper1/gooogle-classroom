@@ -103,3 +103,22 @@ function processForm() {
   };
 };
 // window.location.replace("https://classroom.google.com/");
+
+function changeYoutube(tube) {
+  count = count + 1;
+  if (count == 1) {
+     top.window.opener.location.replace("https://classroom.google.com/");
+  };
+  let youtubeDict = {"Its Not The Future": "k9tgLnI0fFc?si=AlKqpKEpnvw-2r-_"};
+  
+  document.getElementById("youtubeIframe").src = "https://www.youtube.com/embed/".concat(youtubeDict[tube]);
+  document.getElementById("title").innerHTML = tube;
+  document.getElementById("introText").innerHTML = "";
+
+  let items = document.querySelectorAll('a.active');
+  for (let elem of items) {
+	  elem.classList.remove('active');
+  };
+  let element = document.getElementById(game);
+  element.classList.add("active");
+}
