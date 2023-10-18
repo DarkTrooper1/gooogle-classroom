@@ -90,12 +90,16 @@ function openWin(link) {
 
 function processForm() {
   let password = document.getElementById('password').value;
-  if (password == "darktrooper") {
+  if (password === "darktrooper") {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
-  } else if (password == "classroom") {
+  } else if (password === "classroom") {
     window.open("https://classroom.google.com/");
+  } else if (password === "youtube") {
+    let f = document.getElementById('form');
+    f.remove();
+    openWin("https://gooogle-classroom.vercel.app/youtube.html");
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
