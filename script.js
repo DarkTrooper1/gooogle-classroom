@@ -89,14 +89,19 @@ function openWin(link) {
 };
 
 function processForm() {
-  let password = document.getElementById('password').value;
-  if (password === "darktrooper") {
+  const passwordDefault = "3dfb647829b61e51be264e68db41b8d76d7434d2517c545e7ddcd1badf0c229752999939c5af94eea2ecfb7309d2a022c0f807c754f8eeef61013871751793c2";
+  const passwordInput = document.getElementById('password').value
+  
+  let hash = new jsSHA("SHA-512", "TEXT", { numRounds: 1 });
+  hash.update(passwordInput.value);
+
+  if (hash.getHash("HEX") === passwordDefault) {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
-  } else if (password === "classroom") {
+  } else if (passwordInput === "classroom") {
     window.open("https://classroom.google.com/");
-  } else if (password === "youtube") {
+  } else if (passwordInput === "youtube") {
     let f = document.getElementById('form');
     f.remove();
     openWin("https://gooogle-classroom.vercel.app/tube.html");
