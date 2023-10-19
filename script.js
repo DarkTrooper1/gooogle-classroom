@@ -95,7 +95,7 @@ function processForm() {
   let hash = new jsSHA("SHA-512", "TEXT", { numRounds: 1 });
   hash.update(passwordInput.value);
 
-  if (hash.getHash("HEX") === passwordDefault) {
+  if (passwordInput === "darktrooper") {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
