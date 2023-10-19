@@ -113,7 +113,7 @@ function changeYoutube(tube) {
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let youtubeDict = {"Its Not The Future": "k9tgLnI0fFc?si=AlKqpKEpnvw-2r-_", "Hostiles On The Hill": "JRAOdRq-1lw?si=7nNkHc3GDBHv8o-E", "My Stick": "3Xl0Qr0uXuY?si=2_Wx7gPWYRRUoMhW", "I Have The High Ground": "v0wVRG38IYs?si=4-lqNjZuNPmLItxh", "I Have The High Ground EDM": "a2s6BjsYaFs?si=sWc7FTDnHEeV4XvH", "Like A Bantha": "EhAL71gNgKk?si=Da2D24f3-BN-bSCe"};
+  let youtubeDict = {"Its Not The Future": "k9tgLnI0fFc?si=AlKqpKEpnvw-2r-_", "Hostiles On The Hill": "JRAOdRq-1lw?si=7nNkHc3GDBHv8o-E", "My Stick": "3Xl0Qr0uXuY?si=2_Wx7gPWYRRUoMhW", "I Have The High Ground": "v0wVRG38IYs?si=4-lqNjZuNPmLItxh", "I Have The High Ground EDM": "a2s6BjsYaFs?si=sWc7FTDnHEeV4XvH", "Like A Bantha": "EhAL71gNgKk?si=Da2D24f3-BN-bSCe", "Polynesian Spa Meme": "epBoXVlkxGw?si=Maq9f2RFFCmYwca_"};
   
   document.getElementById("youtubeIframe").src = "https://www.youtube.com/embed/".concat(youtubeDict[tube]);
   document.getElementById("title").innerHTML = tube;
