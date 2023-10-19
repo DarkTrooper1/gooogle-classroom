@@ -99,7 +99,7 @@ function processForm() {
   } else if (password === "youtube") {
     let f = document.getElementById('form');
     f.remove();
-    openWin("https://gooogle-classroom.vercel.app/youtube.html");
+    openWin("https://gooogle-classroom.vercel.app/tube.html");
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
