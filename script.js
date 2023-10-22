@@ -94,37 +94,37 @@ function processForm() {
 	
   //let hash = new jsSHA("SHA-512", "TEXT", { numRounds: 1 });
   //hash.update(passwordInput);
-  switch (passwordInput) {
-    case "darktrooper":
-      let form = document.getElementById('form');
-      form.remove();
-      openWin("https://gooogle-classroom.vercel.app/home.html");
-    case "classroom":
-      window.open("https://classroom.google.com/");
-    case "youtube":
-      let f = document.getElementById('form');
-      f.remove();
-      openWin("https://gooogle-classroom.vercel.app/tube.html");
-    default:
-      alert('The password you entered is incorrect.');
-      let form = document.getElementById('form');
-      form.remove();
-  }
+  // switch (passwordInput) {
+  //   case "darktrooper":
+  //     let form = document.getElementById('form');
+  //     form.remove();
+  //     openWin("https://gooogle-classroom.vercel.app/home.html");
+  //   case "classroom":
+  //     window.open("https://classroom.google.com/");
+  //   case "youtube":
+  //     let f = document.getElementById('form');
+  //     f.remove();
+  //     openWin("https://gooogle-classroom.vercel.app/tube.html");
+  //   default:
+  //     alert('The password you entered is incorrect.');
+  //     let form = document.getElementById('form');
+  //     form.remove();
+  // }
 	
-  // if (passwordInput === "darktrooper") {
-  // let form = document.getElementById('form');
-  // form.remove();
-  // openWin("https://gooogle-classroom.vercel.app/home.html");
-  // } else if (passwordInput === "classroom") {
-  // window.open("https://classroom.google.com/");
-  // } else if (passwordInput === "youtube") {
-  // let f = document.getElementById('form');
-  // f.remove();
-  // openWin("https://gooogle-classroom.vercel.app/tube.html");
-  // } else {
-  // alert('The password you entered is incorrect.');
-  // let form = document.getElementById('form');
-  // form.remove();
+  if (passwordInput === "darktrooper") {
+  let form = document.getElementById('form');
+  form.remove();
+  openWin("https://gooogle-classroom.vercel.app/home.html");
+  } else if (passwordInput === "classroom") {
+  window.open("https://classroom.google.com/");
+  } else if (passwordInput === "youtube") {
+  let f = document.getElementById('form');
+  f.remove();
+  openWin("https://gooogle-classroom.vercel.app/tube.html");
+  } else {
+  alert('The password you entered is incorrect.');
+  let form = document.getElementById('form');
+  form.remove();
 }
 
 // window.location.replace("https://classroom.google.com/");
