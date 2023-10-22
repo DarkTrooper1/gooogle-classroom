@@ -103,7 +103,9 @@ function processForm() {
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
-
+    form.remove();
+  };
+};
 // window.location.replace("https://classroom.google.com/");
 
 function changeYoutube(tube) {
