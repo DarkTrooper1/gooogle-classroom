@@ -188,3 +188,6 @@ input {
 .dropdownContent a:hover {
   background-color: #978787;
 }
+#Scratch, #Other{
+  display: none;
+}
