@@ -133,5 +133,5 @@ function changeTo(list) {
   document.getElementById('Other').style.display = 'none';
   let div = document.getElementById(list);
   div.style.display = 'list-item';
-  document.getElementById('introText').innerHTML = intros[list];
+  document.getElementById('introText').value = intros[list];
 };
