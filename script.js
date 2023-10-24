@@ -125,3 +125,11 @@ function changeYoutube(tube) {
   let element = document.getElementById(game);
   element.classList.add("active");
 }
+
+function changeTo(list) {
+  document.getElementById('Home').style.display = 'none';
+  document.getElementById('Scratch').style.display = 'none';
+  document.getElementById('Other').style.display = 'none';
+  let div = document.getElementById(list);
+  div.style.display = 'list-item';
+};
