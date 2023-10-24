@@ -132,6 +132,7 @@ function changeTo(list) {
   document.getElementById('Home').style.display = 'none';
   document.getElementById('Scratch').style.display = 'none';
   document.getElementById('Other').style.display = 'none';
+  document.getElementById('title').innerHTML = 'Home'
   let div = document.getElementById(list);
   div.style.display = 'list-item';
 };
