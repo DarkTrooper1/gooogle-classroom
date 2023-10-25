@@ -46,11 +46,11 @@ function changeOtherGame(game) {
   if (otherGameDict[game] === "Rooftop Snipers/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else {
-  document.getElementById("introText").innerHTML = "";
+    document.getElementById("introText").innerHTML = "";
   }
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
-	  elem.classList.remove('active');
+    elem.classList.remove('active');
   };
   let element = document.getElementById(game);
   element.classList.add("active");
