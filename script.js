@@ -43,8 +43,11 @@ function changeOtherGame(game) {
   let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
+  if (otherGameDict[game] === "Rooftop Snipers/") {
+    document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
+  } else {
   document.getElementById("introText").innerHTML = "";
-  
+  }
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
 	  elem.classList.remove('active');
