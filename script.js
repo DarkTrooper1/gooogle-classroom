@@ -45,7 +45,7 @@ function changeOtherGame(game) {
   document.getElementById("title").innerHTML = game;
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
-  } else if (otherGameDict[game] === "Awesome Tanks 2/") {
+  } else if (otherGameDict[game] === "2048/") {
     document.getElementById('gameIframe').removeAttribute('scrolling')
     document.getElementById("introText").innerHTML = "";
   } else {
