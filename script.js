@@ -45,11 +45,12 @@ function changeOtherGame(game) {
   document.getElementById("title").innerHTML = game;
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
-  } else {
+  } else if (otherGameDict[game] === "Awesome Tanks 2/")
+    document.getElementById('gameIframe').removeAttribute('scrolling')
     document.getElementById("introText").innerHTML = "";
   }
-  if (otherGameDict[game] === "Awesome Tanks 2/")
-    document.getElementById('gameIframe').removeAttribute('scrolling')
+  else {
+    document.getElementById("introText").innerHTML = "";
   }
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
