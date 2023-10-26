@@ -48,6 +48,9 @@ function changeOtherGame(game) {
   } else {
     document.getElementById("introText").innerHTML = "";
   }
+  if (otherGameDict[game] === "Awesome Tanks 2/")
+    document.getElementById('gameIframe').removeAttribute('scrolling')
+  }
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
     elem.classList.remove('active');
