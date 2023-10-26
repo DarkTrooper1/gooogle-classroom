@@ -40,10 +40,10 @@ function changeOtherGame(game) {
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/", "Basketball Stars": "Basketball Stars/"};
+  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
-  if (otherGameDict[game] === "Rooftop Snipers/") {
+  if (otherGameDict[game] === "Rooftop Snipers/" || (otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else {
     document.getElementById("introText").innerHTML = "";
