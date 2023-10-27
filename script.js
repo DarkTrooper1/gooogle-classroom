@@ -40,7 +40,7 @@ function changeOtherGame(game) {
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
-  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/", "Basketball Stars": "Basketball Stars/", "2048": "2048/", "Awesome Tanks 2": "Awesome Tanks 2/", "Death Run 3D": "Death Run 3D/", "Motox3m Spooky": "Motox3m Spooky/"};
+  let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://www.google.com/logos/2018/gnomes/gnomes18.html?hl=en", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/", "Basketball Stars": "Basketball Stars/", "2048": "2048/", "Awesome Tanks 2": "Awesome Tanks 2/", "Death Run 3D": "Death Run 3D/", "Motox3m Spooky": "Motox3m Spooky/", "Motox3m Pool": "Motox3m Pool/"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   document.getElementById("title").innerHTML = game;
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
