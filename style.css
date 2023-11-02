@@ -30,6 +30,7 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
   color: #5252ff;
+  cursor: default;
 }
 
 li a:hover {
