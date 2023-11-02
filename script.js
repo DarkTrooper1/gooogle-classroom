@@ -45,6 +45,8 @@ function changeOtherGame(game) {
   document.getElementById("title").innerHTML = game;
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
+  } else if (otherGameDict[game] === "1v1lol") {
+    document.getElementById("introText").innerHTML = "If the multiplayer options on this game do not work, then try a 1v1 match. If that does not work either, then you can play some of the local games - I recommend zombies.";
   } else if (otherGameDict[game] === "2048/") {
     document.getElementById('gameIframe').removeAttribute('scrolling')
     document.getElementById("introText").innerHTML = "";
