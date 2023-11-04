@@ -57,6 +57,21 @@ iframe {
   height: 600px;
 }
 
+#fullscreen {
+  display: none;
+  color: #5252ff;
+  background-color: #000000;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 1200px;
+}
+
+#fullscreen:hover {
+  background-color: #5252ff;
+  color: #000000;
+}
+
 .active {
   background-color: #000475;
   color: #ffffff;
