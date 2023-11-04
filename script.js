@@ -16,6 +16,7 @@ function scratchWeb() {
 };
 
 function changeScratchGame(game) {
+  document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
   if (count == 1) {
     top.window.opener.location.replace("https://classroom.google.com/");
@@ -36,6 +37,7 @@ function changeScratchGame(game) {
 };
 
 function changeOtherGame(game) {
+  document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
@@ -62,6 +64,7 @@ function changeOtherGame(game) {
 };
 
 function changeConstructGame(game) {
+  document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
   if (count == 1) {
      top.window.opener.location.replace("https://classroom.google.com/");
@@ -140,6 +143,7 @@ function changeTo(list) {
   document.getElementById('Home').style.display = 'none';
   document.getElementById('Scratch').style.display = 'none';
   document.getElementById('Other').style.display = 'none';
+  document.getElementById('fullscreen').style.display = 'none';
   document.getElementById('title').innerHTML = 'Home'
   let div = document.getElementById(list);
   div.style.display = 'list-item';
