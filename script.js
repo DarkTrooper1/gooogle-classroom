@@ -144,3 +144,8 @@ function changeTo(list) {
   let div = document.getElementById(list);
   div.style.display = 'list-item';
 };
+
+function fullscreen() {
+  const source = document.getElementById('gameIframe').src
+  openWin(source)
+}
