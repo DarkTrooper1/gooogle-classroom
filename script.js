@@ -160,4 +160,6 @@ function fullscreen() {
   } else if (gameIfr.msRequestFullscreen) { /* IE11 */
     gameIfr.msRequestFullscreen();
   }
+  gameIfr.style.height = '100%'
+  gameIfr.style.width = '100%'
 }
