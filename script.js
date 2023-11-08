@@ -150,6 +150,14 @@ function changeTo(list) {
 };
 
 function fullscreen() {
-  const source = document.getElementById('gameIframe').src
-  openWin(source)
+  // const source = document.getElementById('gameIframe').src
+  // openWin(source)
+  let gameIfr = document.getElementById('gameIframe')
+  if (gameIfr.requestFullscreen) {
+    gameIfr.requestFullscreen();
+  } else if (gameIfr.webkitRequestFullscreen) { /* Safari */
+    gameIfr.webkitRequestFullscreen();
+  } else if (gameIfr.msRequestFullscreen) { /* IE11 */
+    gameIfr.msRequestFullscreen();
+  }
 }
