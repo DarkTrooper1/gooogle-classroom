@@ -155,11 +155,10 @@ function fullscreen() {
   let gameIfr = document.getElementById('gameIframe')
   if (gameIfr.requestFullscreen) {
     gameIfr.requestFullscreen();
-  } else if (gameIfr.webkitRequestFullscreen) { /* Safari */
-    gameIfr.webkitRequestFullscreen();
-  } else if (gameIfr.msRequestFullscreen) { /* IE11 */
-    gameIfr.msRequestFullscreen();
   }
-  gameIfr.style.height = '100%'
-  gameIfr.style.width = '100%'
+  // } else if (gameIfr.webkitRequestFullscreen) { /* Safari */
+  //   gameIfr.webkitRequestFullscreen();
+  // } else if (gameIfr.msRequestFullscreen) { /* IE11 */
+  //   gameIfr.msRequestFullscreen();
+  // }
 }
