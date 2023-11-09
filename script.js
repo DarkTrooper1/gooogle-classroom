@@ -155,10 +155,9 @@ function fullscreen() {
   let gameIfr = document.getElementById('gameIframe')
   if (gameIfr.requestFullscreen) {
     gameIfr.requestFullscreen();
+  } else if (gameIfr.webkitRequestFullscreen) { /* Safari */
+    gameIfr.webkitRequestFullscreen();
+  } else if (gameIfr.msRequestFullscreen) { /* IE11 */
+    gameIfr.msRequestFullscreen();
   }
-  // } else if (gameIfr.webkitRequestFullscreen) { /* Safari */
-  //   gameIfr.webkitRequestFullscreen();
-  // } else if (gameIfr.msRequestFullscreen) { /* IE11 */
-  //   gameIfr.msRequestFullscreen();
-  // }
 }
