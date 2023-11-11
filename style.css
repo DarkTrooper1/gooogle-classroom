@@ -53,8 +53,8 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
-  height: 600px;
+  min-width: 1200px;
+  min-height: 600px;
 }
 
 iframe:fullscreen {
