@@ -36,6 +36,16 @@ function changeScratchGame(game) {
   element.classList.add("active");
 };
 
+const decipher = salt => {
+  const textToChars = text => text.split('').map(c => c.charCodeAt(0));
+  const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
+  return encoded => encoded.match(/.{1,2}/g)
+    .map(hex => parseInt(hex, 16))
+    .map(applySaltToChar)
+    .map(charCode => String.fromCharCode(charCode))
+    .join('');
+}
+
 function changeOtherGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
@@ -99,28 +109,18 @@ function openWin(link) {
   win.document.body.appendChild(iframe);
 };
 
-const decipher = salt => {
-  const textToChars = text => text.split('').map(c => c.charCodeAt(0));
-  const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
-  return encoded => encoded.match(/.{1,2}/g)
-    .map(hex => parseInt(hex, 16))
-    .map(applySaltToChar)
-    .map(charCode => String.fromCharCode(charCode))
-    .join('');
-}
-
-const myDecipher = decipher('mySecretSalt')
-// myDecipher("606d646467")
-
 function processForm() {
+  const defaultP = decipher('11987123871932');
+  const escapeP = decipher('2k43g2342jgk21o41');
+  const imperialP = decipher('gg2934234g3429ed7820');
   let password = document.getElementById('password').value;
-  if (password === myDecipher("606d646467")) {
+  if (password === defaultP("6461726b74726f6f706572")) {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
-  } else if (password === "classroom") {
+  } else if (password === escapeP("525d504242435e5e5c")) {
     window.open("https://classroom.google.com/");
-  } else if (password === "youtube") {
+  } else if (password === imperialP("27312b2a2b3c3b")) {
     let f = document.getElementById('form');
     f.remove();
     openWin("https://gooogle-classroom.vercel.app/youtube.html");
