@@ -14,7 +14,7 @@ function typingAnimation (id, text) {
 
 function updateText(id) {
   const typing = document.getElementById(id); 
-  const lines = text.substring(0, index).split(/\n|<br>/); 
+  const lines = text.substring(0, index).split("<br>"); 
   if(typing == null){  
     return  
   }
