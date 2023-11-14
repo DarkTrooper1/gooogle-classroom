@@ -7,7 +7,7 @@ function typingAnimation (id, text) {
     index++;
     updateText(id);
     if (index < text.length) {
-      typingAnimation(id);
+      typingAnimation("title", game);
     }
   }, 200)
 }
