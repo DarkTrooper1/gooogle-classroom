@@ -56,9 +56,24 @@ iframe {
   min-width: 1200px;
   min-height: 600px;
 }
+
 iframe:fullscreen {
   width: 100vw;
   height: 100vh;
+}
+
+@keyframes titleColour {
+  0%   {color: red;}
+  10%   {color: orange;}
+  20%  {color: yellow;}
+  30% {color: lightgreen;}
+  40%  {color: darkgreen;}
+  50%   {color: turquoise;}
+  60%   {color: lightblue;}
+  70%   {color: darkblue;}
+  80%   {color: violet;}
+  90%   {color: purple;}
+  100%   {color: pink;}
 }
 
 #fullscreen {
