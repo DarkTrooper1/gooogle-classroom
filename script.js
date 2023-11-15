@@ -196,6 +196,10 @@ function changeTo(list) {
   document.getElementById('title').innerHTML = 'Home'
   let div = document.getElementById(list);
   div.style.display = 'list-item';
+  let items = document.querySelectorAll('a.active');
+  for (let elem of items) {
+    elem.classList.remove('active');
+  };
 };
 
 function fullscreen() {
