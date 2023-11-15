@@ -62,6 +62,11 @@ iframe:fullscreen {
   height: 100vh;
 }
 
+.titleColourAnimation {
+  animation-name: titleColour;
+  animation-duration: 2s;
+}
+
 @keyframes titleColour {
   0%   {color: red;}
   10%   {color: orange;}
