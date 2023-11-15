@@ -43,6 +43,8 @@ function changeScratchGame(game) {
     }
   }
   typeWriter()
+  document.getElementById("title").style.animationName = "titleColour"
+  document.getElementById("title").style.animationDuration = "3s"
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -71,6 +73,8 @@ function changeOtherGame(game) {
     }
   }
   typeWriter()
+  document.getElementById("title").style.animationName = "titleColour"
+  document.getElementById("title").style.animationDuration = "3s"
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -109,6 +113,8 @@ function changeConstructGame(game) {
     }
   }
   typeWriter()
+  document.getElementById("title").style.animationName = "titleColour"
+  document.getElementById("title").style.animationDuration = "3s"
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
