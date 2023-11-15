@@ -33,7 +33,7 @@ function changeScratchGame(game) {
   let scratchGameDict = {"Appel": "60917032", "Arena": "139025103", "14-15": "306576111", "Infinite Bunner": "567535145", "Desert Appel": "489697593", "Getting Over It": "389464290", "Heat Appel": "511913555", "Meltdown": "143663274", "Minecraft Appel": "678316153", "Moon Gravity": "423313626", "Massive Multiplayer": "612229554", "Subzero": "216343253", "Volcano Appel": "472031225", "World": "224236914", "Space Appel": "574035335", "Bionic Blitz": "539747811", "9-13": "140185501"};
   document.getElementById("gameIframe").src = "https://".concat(scratchWeb(), scratchGameDict[game], "/embed");
   let i = 0;
-  let speed = 50;
+  let speed = 100;
   document.getElementById("title").innerHTML = "";
   function typeWriter() {
     if (i < game.length) {
@@ -65,7 +65,7 @@ function changeOtherGame(game) {
   let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://lh3.googleusercontent.com/pHc09EKAAgzJVDw8O6Qd79GNqmsWhl-Xnv5GVuxbMn_YKcnE0CKjj1zAt_gsOnyi6bysD9YE7q1_GH-R0gkNKH_vno3oWzvQBRr44RAr=s0", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/", "Basketball Stars": "Basketball Stars/", "2048": "2048/", "Awesome Tanks 2": "Awesome Tanks 2/", "Death Run 3D": "Death Run 3D/", "Motox3m Spooky": "Motox3m Spooky/", "Motox3m Pool": "Motox3m Pool/", "1v1lol": "1v1lol/", "Learn To Fly": "Learn To Fly/", "Among Us": "Among Us/"};
   document.getElementById("gameIframe").src = otherGameDict[game];
   let i = 0;
-  let speed = 50;
+  let speed = 100;
   document.getElementById("title").innerHTML = "";
   function typeWriter() {
     if (i < game.length) {
@@ -107,7 +107,7 @@ function changeConstructGame(game) {
   
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
   let i = 0;
-  let speed = 50;
+  let speed = 100;
   document.getElementById("title").innerHTML = "";
   function typeWriter() {
     if (i < game.length) {
