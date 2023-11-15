@@ -42,11 +42,11 @@ function changeScratchGame(game) {
       setTimeout(typeWriter, speed);
     }
   }
-  typeWriter()
   document.getElementById("title").classList.add('titleColourAnimation')
   document.getElementById("title").addEventListener("animationend", () => {
     document.getElementById("title").classList.remove('titleColourAnimation')
   });
+  typeWriter()
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -74,11 +74,11 @@ function changeOtherGame(game) {
       setTimeout(typeWriter, speed);
     }
   }
-  typeWriter()
   document.getElementById("title").classList.add('titleColourAnimation')
   document.getElementById("title").addEventListener("animationend", () => {
     document.getElementById("title").classList.remove('titleColourAnimation')
   });
+  typeWriter()
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -116,11 +116,11 @@ function changeConstructGame(game) {
       setTimeout(typeWriter, speed);
     }
   }
-  typeWriter()
   document.getElementById("title").classList.add('titleColourAnimation')
   document.getElementById("title").addEventListener("animationend", () => {
     document.getElementById("title").classList.remove('titleColourAnimation')
   });
+  typeWriter()
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
