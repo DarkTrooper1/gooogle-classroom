@@ -80,9 +80,7 @@ function changeConstructGame(game) {
      top.window.opener.location.replace("https://classroom.google.com/");
   };
   let constructGameDict = {"Neon Rocket": "15727", "Ultra Pixel Survive": "26420"};
-  
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
-  // typingAnimation("title", game)
   document.getElementById("title") = game;
   document.getElementById("introText").innerHTML = "";
 
