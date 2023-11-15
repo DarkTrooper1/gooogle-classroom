@@ -34,17 +34,15 @@ function changeScratchGame(game) {
   document.getElementById("gameIframe").src = "https://".concat(scratchWeb(), scratchGameDict[game], "/embed");
   let i = 0;
   let speed = 50;
-  function typeWriter(id) {
-    if (i === 0) {
-      document.getElementById(id).innerHTML = "";
-    }
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
     if (i < game.length) {
-      document.getElementById(id).innerHTML += game.charAt(i);
+      document.getElementById("title").innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter(id), speed);
+      setTimeout(typeWriter, speed);
     }
   }
-  typeWriter('title')
+  typeWriter()
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -64,17 +62,15 @@ function changeOtherGame(game) {
   document.getElementById("gameIframe").src = otherGameDict[game];
   let i = 0;
   let speed = 50;
-  function typeWriter(id) {
-    if (i === 0) {
-      document.getElementById(id).innerHTML = "";
-    }
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
     if (i < game.length) {
-      document.getElementById(id).innerHTML += game.charAt(i);
+      document.getElementById("title").innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter(id), speed);
+      setTimeout(typeWriter, speed);
     }
   }
-  typeWriter('title')
+  typeWriter()
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -104,17 +100,15 @@ function changeConstructGame(game) {
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
   let i = 0;
   let speed = 50;
-  function typeWriter(id) {
-    if (i === 0) {
-      document.getElementById(id).innerHTML = "";
-    }
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
     if (i < game.length) {
-      document.getElementById(id).innerHTML += game.charAt(i);
+      document.getElementById("title").innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter(id), speed);
+      setTimeout(typeWriter, speed);
     }
   }
-  typeWriter('title')
+  typeWriter()
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
