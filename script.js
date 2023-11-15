@@ -1,4 +1,4 @@
-var count = 0;
+let count = 0;
 function scratchWeb() {
   let now = new Date();
   let day = now.getDay();
@@ -13,6 +13,7 @@ function scratchWeb() {
     return "scratch.mit.edu/projects/"; // Change this back when Turbowarp is back up and running
   };
 };
+
 function changeScratchGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
@@ -21,7 +22,16 @@ function changeScratchGame(game) {
   };
   let scratchGameDict = {"Appel": "60917032", "Arena": "139025103", "14-15": "306576111", "Infinite Bunner": "567535145", "Desert Appel": "489697593", "Getting Over It": "389464290", "Heat Appel": "511913555", "Meltdown": "143663274", "Minecraft Appel": "678316153", "Moon Gravity": "423313626", "Massive Multiplayer": "612229554", "Subzero": "216343253", "Volcano Appel": "472031225", "World": "224236914", "Space Appel": "574035335", "Bionic Blitz": "539747811", "9-13": "140185501"};
   document.getElementById("gameIframe").src = "https://".concat(scratchWeb(), scratchGameDict[game], "/embed");
-  document.getElementById("title").innerHTML = game;
+  let i = 0;
+  let speed = 50;
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
+    if (i < game.length) {
+      document.getElementById("title").innerHTML += game.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -30,6 +40,7 @@ function changeScratchGame(game) {
   let element = document.getElementById(game);
   element.classList.add("active");
 };
+
 const decipher = salt => {
   const textToChars = text => text.split('').map(c => c.charCodeAt(0));
   const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
@@ -39,6 +50,7 @@ const decipher = salt => {
     .map(charCode => String.fromCharCode(charCode))
     .join('');
 }
+
 function changeOtherGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
@@ -47,7 +59,16 @@ function changeOtherGame(game) {
   };
   let otherGameDict = {"Bandit Rip": "https://bandit.rip/", "Garden Gnomes": "https://lh3.googleusercontent.com/pHc09EKAAgzJVDw8O6Qd79GNqmsWhl-Xnv5GVuxbMn_YKcnE0CKjj1zAt_gsOnyi6bysD9YE7q1_GH-R0gkNKH_vno3oWzvQBRr44RAr=s0", "Slope": "Slope/", "Paper io": "Paper io/", "Retro Bowl": "Retro bowl/", "Getaway Shootout": "Getaway Shootout/", "Rooftop Snipers": "Rooftop Snipers/", "Motox3m Winter": "Motox3m Winter/", "Motox3m": "Motox3m/", "Basketball Stars": "Basketball Stars/", "2048": "2048/", "Awesome Tanks 2": "Awesome Tanks 2/", "Death Run 3D": "Death Run 3D/", "Motox3m Spooky": "Motox3m Spooky/", "Motox3m Pool": "Motox3m Pool/", "1v1lol": "1v1lol/", "Learn To Fly": "Learn To Fly/", "Among Us": "Among Us/"};
   document.getElementById("gameIframe").src = otherGameDict[game];
-  document.getElementById("title").innerHTML = game;
+  let i = 0;
+  let speed = 50;
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
+    if (i < game.length) {
+      document.getElementById("title").innerHTML += game.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -65,6 +86,7 @@ function changeOtherGame(game) {
   let element = document.getElementById(game);
   element.classList.add("active");
 };
+
 function changeConstructGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
@@ -74,7 +96,16 @@ function changeConstructGame(game) {
   let constructGameDict = {"Neon Rocket": "15727", "Ultra Pixel Survive": "26420"};
   
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
-  document.getElementById("title").innerHTML = game;
+  let i = 0;
+  let speed = 50;
+  document.getElementById("title").innerHTML = "";
+  function typeWriter() {
+    if (i < game.length) {
+      document.getElementById("title").innerHTML += game.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -83,12 +114,14 @@ function changeConstructGame(game) {
   let element = document.getElementById(game);
   element.classList.add("active");
 };
+
 function escape() {
   window.open("https://classroom.google.com/");
 };
+
 function openWin(link) {
-  var win = window.open();
-  var iframe = win.document.createElement('iframe');
+  let win = window.open();
+  let iframe = win.document.createElement('iframe');
   win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
   iframe.style.width = "100%";
   iframe.style.height = "100%";
@@ -97,6 +130,7 @@ function openWin(link) {
   iframe.src = link;
   win.document.body.appendChild(iframe);
 };
+
 function processForm() {
   const defaultP = decipher('11987123871932');
   const escapeP = decipher('2k43g2342jgk21o41');
@@ -118,6 +152,7 @@ function processForm() {
     form.remove();
   };
 };
+
 // window.location.replace("https://classroom.google.com/");
 function changeYoutube(tube) {
   count = count + 1;
@@ -135,6 +170,7 @@ function changeYoutube(tube) {
   let element = document.getElementById(game);
   element.classList.add("active");
 }
+
 function changeTo(list) {
   document.getElementById('gameIframe').removeAttribute('src')
   document.getElementById('introText').innerHTML = '<b>How the website works - PLEASE READ:</b><br><br>Before you dive in to using this website, please consider all of its aspects. When you were given the link to this website, and every time you come back to it, it will show up in your history - as google classroom of course. The link to this site itself if completely invisible - if you look at the title and URL of this page, they are about:blank, which does not show up in history. But to make it even more masked, when you click on a game, you will see that it reloads the first page to the real google classroom, and removes the link to the origional site from your history completely. <br><br><b>Useful functions of the site - PLEASE READ:</b><br><br>If a teacher is suspicious of what the web page with the password entry is, then you can say that it was simply a coding exercise and you can enter "classroom" as your password. This will then open up google classroom and not the games website. Finally, in the nav bar is an escape button. If someone is about to come past, you can press this button and you will be brought to google classroom as well.<br><br>Thank you for reading. Have fun! (If you have any suggestions for games I could feasibly add to the site, then please do contact me - I love the feedback!)<br><br><b>Credit to 3kh0 for many of the games!</b></p>'
@@ -146,6 +182,7 @@ function changeTo(list) {
   let div = document.getElementById(list);
   div.style.display = 'list-item';
 };
+
 function fullscreen() {
   // const source = document.getElementById('gameIframe').src
   // openWin(source)
