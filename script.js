@@ -45,6 +45,10 @@ function changeScratchGame(game) {
   typeWriter()
   document.getElementById("title").style.animationName = "titleColour"
   document.getElementById("title").style.animationDuration = "3s"
+  document.getElementById("title").addEventListener("animationend", () => {
+    document.getElementById("title").style.style.removeProperty('animationName')
+    document.getElementById("title").style.removeProperty('animationDuration')
+  });
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
