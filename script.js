@@ -115,17 +115,6 @@ function processForm() {
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
     form.remove();
   };
 };
