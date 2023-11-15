@@ -14,6 +14,16 @@ function scratchWeb() {
   };
 };
 
+const decipher = salt => {
+  const textToChars = text => text.split('').map(c => c.charCodeAt(0));
+  const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
+  return encoded => encoded.match(/.{1,2}/g)
+    .map(hex => parseInt(hex, 16))
+    .map(applySaltToChar)
+    .map(charCode => String.fromCharCode(charCode))
+    .join('');
+}
+
 function changeScratchGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
   count = count + 1;
@@ -24,15 +34,17 @@ function changeScratchGame(game) {
   document.getElementById("gameIframe").src = "https://".concat(scratchWeb(), scratchGameDict[game], "/embed");
   let i = 0;
   let speed = 50;
-  document.getElementById("title").innerHTML = "";
-  function typeWriter() {
+  function typeWriter(id) {
+    if (i === 0) {
+      document.getElementById(id).innerHTML = "";
+    }
     if (i < game.length) {
-      document.getElementById("title").innerHTML += game.charAt(i);
+      document.getElementById(id).innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(id), speed);
     }
   }
-  typeWriter()
+  typeWriter('title')
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
@@ -41,16 +53,6 @@ function changeScratchGame(game) {
   let element = document.getElementById(game);
   element.classList.add("active");
 };
-
-const decipher = salt => {
-  const textToChars = text => text.split('').map(c => c.charCodeAt(0));
-  const applySaltToChar = code => textToChars(salt).reduce((a,b) => a ^ b, code);
-  return encoded => encoded.match(/.{1,2}/g)
-    .map(hex => parseInt(hex, 16))
-    .map(applySaltToChar)
-    .map(charCode => String.fromCharCode(charCode))
-    .join('');
-}
 
 function changeOtherGame(game) {
   document.getElementById('fullscreen').style.display = 'block';
@@ -62,15 +64,17 @@ function changeOtherGame(game) {
   document.getElementById("gameIframe").src = otherGameDict[game];
   let i = 0;
   let speed = 50;
-  document.getElementById("title").innerHTML = "";
-  function typeWriter() {
+  function typeWriter(id) {
+    if (i === 0) {
+      document.getElementById(id).innerHTML = "";
+    }
     if (i < game.length) {
-      document.getElementById("title").innerHTML += game.charAt(i);
+      document.getElementById(id).innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(id), speed);
     }
   }
-  typeWriter()
+  typeWriter('title')
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -100,15 +104,17 @@ function changeConstructGame(game) {
   document.getElementById("gameIframe").src = "https://games.construct.net/".concat(constructGameDict[game], "/latest");
   let i = 0;
   let speed = 50;
-  document.getElementById("title").innerHTML = "";
-  function typeWriter() {
+  function typeWriter(id) {
+    if (i === 0) {
+      document.getElementById(id).innerHTML = "";
+    }
     if (i < game.length) {
-      document.getElementById("title").innerHTML += game.charAt(i);
+      document.getElementById(id).innerHTML += game.charAt(i);
       i++;
-      setTimeout(typeWriter, speed);
+      setTimeout(typeWriter(id), speed);
     }
   }
-  typeWriter()
+  typeWriter('title')
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
