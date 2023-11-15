@@ -43,11 +43,9 @@ function changeScratchGame(game) {
     }
   }
   typeWriter()
-  document.getElementById("title").style.animationName = "titleColour"
-  document.getElementById("title").style.animationDuration = "3s"
+  document.getElementById("title").classList.add('titleColourAnimation')
   document.getElementById("title").addEventListener("animationend", () => {
-    document.getElementById("title").style.style.removeProperty('animationName')
-    document.getElementById("title").style.removeProperty('animationDuration')
+    document.getElementById("title").classList.remove('titleColourAnimation')
   });
   document.getElementById("introText").innerHTML = " ";
   let items = document.querySelectorAll('a.active');
@@ -77,8 +75,10 @@ function changeOtherGame(game) {
     }
   }
   typeWriter()
-  document.getElementById("title").style.animationName = "titleColour"
-  document.getElementById("title").style.animationDuration = "3s"
+  document.getElementById("title").classList.add('titleColourAnimation')
+  document.getElementById("title").addEventListener("animationend", () => {
+    document.getElementById("title").classList.remove('titleColourAnimation')
+  });
   if (otherGameDict[game] === "Rooftop Snipers/" || otherGameDict[game] === "Getaway Shootout/") {
     document.getElementById("introText").innerHTML = "This game takes about 30 seconds to load. PLEASE PRESS WAIT when you are given the option: it will load very soon after that.";
   } else if (otherGameDict[game] === "1v1lol/") {
@@ -117,8 +117,10 @@ function changeConstructGame(game) {
     }
   }
   typeWriter()
-  document.getElementById("title").style.animationName = "titleColour"
-  document.getElementById("title").style.animationDuration = "3s"
+  document.getElementById("title").classList.add('titleColourAnimation')
+  document.getElementById("title").addEventListener("animationend", () => {
+    document.getElementById("title").classList.remove('titleColourAnimation')
+  });
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
