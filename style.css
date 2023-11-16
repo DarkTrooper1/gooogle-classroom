@@ -64,7 +64,7 @@ iframe:fullscreen {
 
 .titleColourAnimation {
   animation-name: titleColour;
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 @keyframes titleColour {
