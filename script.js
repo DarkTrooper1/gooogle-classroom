@@ -195,7 +195,11 @@ function changeTo(list) {
   document.getElementById('Other').style.display = 'none';
   document.getElementById('Youtube').style.display = 'none';
   document.getElementById('fullscreen').style.display = 'none';
-  document.getElementById('title').innerHTML = 'Home'
+  if (list === 'Other') {
+    document.getElementById('title').innerHTML = 'Games'
+  } else {
+    document.getElementById('title').innerHTML = list
+  }
   let div = document.getElementById(list);
   div.style.display = 'list-item';
   let items = document.querySelectorAll('a.active');
@@ -218,8 +222,9 @@ function fullscreen() {
 }
 
 function formVisible() {
-  document.getElementById('youtubeUnblker').style.display = "block"
+  document.getElementById('title').innerHTML = 'Youtube Unblker'
   document.getElementById('introText').innerHTML = ""
+  document.getElementById('youtubeForm').style.display = 'block'
 }
 
 function youtubeUnblker() {
