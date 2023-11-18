@@ -217,6 +217,10 @@ function fullscreen() {
   }
 }
 
+function formVisible() {
+  document.getElementById('youtubeUnblker').style.display = "block"
+}
+
 function youtubeUnblker() {
   let youtubeLink = document.getElementById('youtubeLink').value
   if (youtubeLink.includes('www.youtube.com/watch?v=')) {
