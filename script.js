@@ -223,10 +223,9 @@ function youtubeUnblker() {
     youtubeLink.replace('www.youtube.com/watch?v=', '')
     if youtubeLink.includes('https://') {
       youtubeLink.replace('https://', '')
-    document.getElementById('gameIframe').src = 'https://www.youtube-nocookie.com/embed/'.concat(youtubeLink)
-  else {
-    alert(`${youtubeLink} is not a valid YouTube URL. Please try again.`)
-  }
     }
+    document.getElementById('gameIframe').src = 'https://www.youtube-nocookie.com/embed/'.concat(youtubeLink)
+  } else {
+    alert(`${youtubeLink} is not a valid YouTube URL. Please try again.`)
   }
 }
