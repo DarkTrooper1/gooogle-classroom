@@ -193,7 +193,7 @@ function changeTo(list) {
   document.getElementById('Home').style.display = 'none';
   document.getElementById('Scratch').style.display = 'none';
   document.getElementById('Other').style.display = 'none';
-  document.getElementById('youtube').style.display = 'none';
+  document.getElementById('Youtube').style.display = 'none';
   document.getElementById('fullscreen').style.display = 'none';
   document.getElementById('title').innerHTML = 'Home'
   let div = document.getElementById(list);
