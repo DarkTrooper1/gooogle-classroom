@@ -179,6 +179,6 @@ input {
 .dropdownContent a:hover {
   background-color: #978787;
 }
-#Scratch, #Other, #Youtube, #youtubeUnblker{
+#Scratch, #Other, #Youtube, #youtubeForm{
   display: none;
 }
