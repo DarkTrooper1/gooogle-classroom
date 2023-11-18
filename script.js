@@ -227,7 +227,7 @@ function youtubeUnblker() {
   if (youtubeLink.includes('www.youtube.com/watch?v=')) {
   youtubeLink = youtubeLink.replace('www.youtube.com/watch?v=', '')
     if (youtubeLink.includes('https://')) {
-youtubeLink = youtubeLink.replace('https://', '')
+      youtubeLink = youtubeLink.replace('https://', '')
     }
     document.getElementById('gameIframe').src = 'https://www.youtube-nocookie.com/embed/'.concat(youtubeLink)
   } else {
