@@ -219,6 +219,7 @@ function fullscreen() {
 
 function formVisible() {
   document.getElementById('youtubeUnblker').style.display = "block"
+  document.getElementById('introText').innerHTML = ""
 }
 
 function youtubeUnblker() {
