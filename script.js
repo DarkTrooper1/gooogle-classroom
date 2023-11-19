@@ -270,3 +270,30 @@ function youtubeUnblker() {
     alert(`${youtubeLink} is not a valid YouTube URL. Please try again.`)
   }
 }
+
+function googleForm() {
+  let i = 0;
+  let speed = 100;
+  document.getElementById("title").innerHTML = "";
+  let game = 'Recommendations'
+  function typeWriter() {
+    if (i < game.length) {
+      document.getElementById("title").innerHTML += game.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  document.getElementById("title").classList.add('titleColourAnimation')
+  document.getElementById("title").addEventListener("animationend", () => {
+    document.getElementById("title").classList.remove('titleColourAnimation')
+  });
+  typeWriter()
+  document.getElementById('introText').innerHTML = ""
+  let items = document.querySelectorAll('a.active');
+  for (let elem of items) {
+    elem.classList.remove('active');
+  };
+  let element = document.getElementById('googleForm');
+  element.classList.add("active");
+  document.getElementById('gameIframe').src = "https://docs.google.com/forms/d/e/1FAIpQLSffcNuPWQQcXOpS_SxpXW2dv9p2E3WPM1ENMcQwo9WYuLufwQ/viewform?embedded=true"
+}
