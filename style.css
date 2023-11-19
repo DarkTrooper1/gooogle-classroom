@@ -133,8 +133,8 @@ form
 }
 .submit:hover {
   background-color: #50008B;
-  height: 40px;
-  width: 260px;
+  height: 50px;
+  width: 210px;
 }
 
 #password {
