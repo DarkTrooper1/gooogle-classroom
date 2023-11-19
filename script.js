@@ -276,7 +276,7 @@ function googleForm() {
   let i = 0;
   let speed = 100;
   document.getElementById("title").innerHTML = "";
-  let game = 'Recommendations'
+  let game = 'Game Recommendations'
   function typeWriter() {
     if (i < game.length) {
       document.getElementById("title").innerHTML += game.charAt(i);
