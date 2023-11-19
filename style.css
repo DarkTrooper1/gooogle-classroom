@@ -130,9 +130,9 @@ form
 }
 
 input {
-  width: 250px;
-  height: 30px;
-  border-radius: 30px;
+  width: 200px;
+  height: 40px;
+  border-radius: 40px;
   background-color: blue;
   border: 0px;
   color: white;
