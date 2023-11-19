@@ -129,12 +129,14 @@ form
   background-color: blue;
   border: 0px;
   color: white;
-  transition: background-color 2s, height 1s, width 1s;
+  transition: background-color 2s;
 }
 .submit:hover {
   background-color: #50008B;
   height: 50px;
   width: 210px;
+  transform-origin: center;
+  transform: scale(1.3, 1.3);
 }
 
 #password {
