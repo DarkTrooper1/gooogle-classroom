@@ -295,5 +295,6 @@ function googleForm() {
   };
   let element = document.getElementById('googleForm');
   element.classList.add("active");
+  document.getElementById("gameIframe").style.display = 'block';
   document.getElementById('gameIframe').src = "https://docs.google.com/forms/d/e/1FAIpQLSffcNuPWQQcXOpS_SxpXW2dv9p2E3WPM1ENMcQwo9WYuLufwQ/viewform?embedded=true"
 }
