@@ -122,12 +122,11 @@ form
   margin-right: auto;
   text-align: left;
 }
-input {
+#password {
   border-radius: 40px;
   width: 200px;
   height: 40px;
   text-align: center;
-  
 }
 
 .submit {
@@ -179,6 +178,38 @@ input {
 .dropdownContent a:hover {
   background-color: #978787;
 }
+
 #Scratch, #Other, #Youtube, #youtubeForm{
   display: none;
+}
+
+#submitYoutube {
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: blue;
+  border: 0px;
+  color: white;
+  transition: background-color 2s, height 1s, width 1s;
+}
+
+#submitYoutube:hover {
+  background-color: #50008B;
+  height: 40px;
+  width: 260px;
+}
+
+#youtubeLink {
+  width: 250px;
+  box-shadow: 0px 0px 10px black;
+  height: 20px;
+  border: 0px;
+  text-align: center;
+}
+
+#youtubeForm {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
