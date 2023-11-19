@@ -130,12 +130,18 @@ form
 }
 
 .submit {
-  border: none;
-  background-color: #0400ff;
+  width: 250px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: blue;
+  border: 0px;
   color: white;
+  transition: background-color 2s, height 1s, width 1s;
 }
 .submit:hover {
-  background-color: #006eff;
+  background-color: #50008B;
+  height: 40px;
+  width: 260px;
 }
 
 .dropdown {
