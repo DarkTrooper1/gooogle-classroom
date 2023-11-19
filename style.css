@@ -50,11 +50,15 @@ p {
 }
 
 iframe {
-  display: none;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   min-width: 1200px;
   min-height: 600px;
+}
+
+#gameIframe {
+  display: none;
 }
 
 iframe:fullscreen {
