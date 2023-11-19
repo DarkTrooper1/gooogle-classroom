@@ -222,3 +222,7 @@ form
   margin-right: auto;
   text-align: center;
 }
+
+#youtubePrompt {
+  font-size: 18px;
+}
