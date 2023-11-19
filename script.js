@@ -127,7 +127,7 @@ function changeConstructGame(game) {
   document.getElementById("introText").innerHTML = "";
   let items = document.querySelectorAll('a.active');
   for (let elem of items) {
-	  elem.classList.remove('active');
+    elem.classList.remove('active');
   };
   let element = document.getElementById(game);
   element.classList.add("active");
@@ -248,6 +248,12 @@ function formVisible() {
   typeWriter()
   document.getElementById('introText').innerHTML = ""
   document.getElementById('youtubeForm').style.display = 'block'
+  let items = document.querySelectorAll('a.active');
+  for (let elem of items) {
+    elem.classList.remove('active');
+  };
+  let element = document.getElementById(game);
+  element.classList.add("active");
 }
 
 function youtubeUnblker() {
