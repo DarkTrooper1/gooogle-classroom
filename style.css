@@ -122,13 +122,6 @@ form
   margin-right: auto;
   text-align: left;
 }
-#password {
-  border-radius: 40px;
-  width: 200px;
-  height: 40px;
-  text-align: center;
-}
-
 input {
   width: 200px;
   height: 40px;
@@ -143,6 +136,15 @@ input:hover {
   height: 40px;
   width: 260px;
 }
+
+#password {
+  background-color: white;
+  border-radius: 40px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+}
+
 
 .dropdown {
   float: left;
