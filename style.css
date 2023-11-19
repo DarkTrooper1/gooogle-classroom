@@ -129,7 +129,7 @@ form
   background-color: blue;
   border: 0px;
   color: white;
-  transition: background-color 2s;
+  transition: background-color 2s, transform 2s;
 }
 .submit:hover {
   background-color: #50008B;
