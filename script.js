@@ -155,12 +155,15 @@ function processForm() {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
+    top.window.opener.location.replace("https://classroom.google.com/");
   } else if (password === escapeP("525d504242435e5e5c")) {
     window.open("https://classroom.google.com/");
+    top.window.opener.location.replace("https://classroom.google.com/");
   } else if (password === imperialP("27312b2a2b3c3b")) {
     let f = document.getElementById('form');
     f.remove();
     openWin("https://gooogle-classroom.vercel.app/tube.html");
+    top.window.opener.location.replace("https://classroom.google.com/");
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('form');
@@ -222,7 +225,22 @@ function fullscreen() {
 }
 
 function formVisible() {
-  document.getElementById('title').innerHTML = 'Youtube Unblker'
+  let i = 0;
+  let speed = 100;
+  document.getElementById("title").innerHTML = "";
+  let game = 'Youtube Unblker'
+  function typeWriter() {
+    if (i < game.length) {
+      document.getElementById("title").innerHTML += game.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+  document.getElementById("title").classList.add('titleColourAnimation')
+  document.getElementById("title").addEventListener("animationend", () => {
+    document.getElementById("title").classList.remove('titleColourAnimation')
+  });
+  typeWriter()
   document.getElementById('introText').innerHTML = ""
   document.getElementById('youtubeForm').style.display = 'block'
 }
@@ -235,6 +253,7 @@ function youtubeUnblker() {
       youtubeLink = youtubeLink.replace('https://', '')
     }
     document.getElementById('gameIframe').src = 'https://www.youtube-nocookie.com/embed/'.concat(youtubeLink)
+    top.window.opener.location.replace("https://classroom.google.com/");
   } else {
     alert(`${youtubeLink} is not a valid YouTube URL. Please try again.`)
   }
