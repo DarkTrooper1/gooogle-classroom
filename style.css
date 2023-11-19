@@ -179,7 +179,7 @@ form
   background-color: #978787;
 }
 
-#Scratch, #Other, #Youtube, #youtubeForm{
+#Scratch, #Other, #Youtube {
   display: none;
 }
 
@@ -208,7 +208,7 @@ form
 }
 
 #youtubeForm {
-  display: inline-block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
   text-align: left;
