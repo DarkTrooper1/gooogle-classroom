@@ -252,7 +252,7 @@ function formVisible() {
   for (let elem of items) {
     elem.classList.remove('active');
   };
-  let element = document.getElementById(game);
+  let element = document.getElementById('youtubeUnblker');
   element.classList.add("active");
 }
 
