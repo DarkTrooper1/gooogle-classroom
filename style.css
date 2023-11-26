@@ -189,7 +189,8 @@ form
 }
 
 .dropdownContent a:hover {
-  background-color: #978787;
+  background-color: #333333;
+  color: white;
 }
 
 #Scratch, #Other, #Youtube {
