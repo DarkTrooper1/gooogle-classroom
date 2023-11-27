@@ -149,6 +149,11 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
+  if (link === "Darktrooper Games Video.mp4") {
+    iframe.onended = () => {
+      iframe.src = "https://gooogle-classroom.vercel.app/home.html";
+    }
+  }
 };
 
 function processForm() {
@@ -159,7 +164,7 @@ function processForm() {
   if (password === defaultP("6461726b74726f6f706572")) {
     let form = document.getElementById('form');
     form.remove();
-    openWin("https://gooogle-classroom.vercel.app/home.html");
+    openWin("Darktrooper Games Video.mp4");
     top.window.opener.location.replace("https://classroom.google.com/");
   } else if (password === escapeP("525d504242435e5e5c")) {
     window.open("https://classroom.google.com/");
