@@ -235,3 +235,13 @@ form
 .recommend {
   color: green;
 }
+
+video {
+  display: none;
+}
+
+.myVideo {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
