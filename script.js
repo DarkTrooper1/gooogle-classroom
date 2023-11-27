@@ -147,16 +147,9 @@ function openWin(link) {
   iframe.style.height = "100%";
   iframe.style.border = "none";
   iframe.frameBorder = 0;
-  if (link === "https://gooogle-classroom.vercel.app/home.html") {
-    const video = document.getElementById('myVideo');
-    video.onended = function() {
-      video.classList.remove("myVideo");
-    };
-  } else {
-    iframe.src = link;
-    win.document.body.appendChild(iframe); 
-  };
-};
+  iframe.src = link;
+  win.document.body.appendChild(iframe);
+}
 
 function processForm() {
   const defaultP = decipher('11987123871932');
