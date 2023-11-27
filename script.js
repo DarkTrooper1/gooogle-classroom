@@ -142,7 +142,7 @@ function escape() {
 function openWin(link) {
   let win = window.open();
   let iframe = win.document.createElement('iframe');
-  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width"></head></html>')
+  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head></html>')
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";
@@ -150,9 +150,9 @@ function openWin(link) {
   iframe.src = link;
   win.document.body.appendChild(iframe);
   if (link === "Darktrooper Games Video.mp4") {
-    iframe.onended = () => {
+    iframe.addEventListener("ended", () => {
       iframe.src = "https://gooogle-classroom.vercel.app/home.html";
-    }
+    })
   }
 };
 
