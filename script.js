@@ -142,18 +142,20 @@ function escape() {
 function openWin(link) {
   let win = window.open();
   let iframe = win.document.createElement('iframe');
-  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head></html>')
+  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head><body><video autoplay id="myVideo" class="myVideo"><source src="Darktrooper Games Video.mp4" type="video/mp4"></video></body></html>')
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";
   iframe.frameBorder = 0;
-  iframe.src = link;
-  win.document.body.appendChild(iframe);
-  if (link === "Darktrooper Games Video.mp4") {
-    iframe.addEventListener("ended", () => {
-      iframe.src = "https://gooogle-classroom.vercel.app/home.html";
-    })
-  }
+  if (link === "https://gooogle-classroom.vercel.app/home.html") {
+    const video = document.getElementById('myVideo');
+    video.onended = function() {
+      video.classList.remove("myVideo");
+    };
+  } else {
+    iframe.src = link;
+    win.document.body.appendChild(iframe); 
+  };
 };
 
 function processForm() {
@@ -164,7 +166,7 @@ function processForm() {
   if (password === defaultP("6461726b74726f6f706572")) {
     let form = document.getElementById('form');
     form.remove();
-    openWin("Darktrooper Games Video.mp4");
+    openWin("https://gooogle-classroom.vercel.app/home.html");
     top.window.opener.location.replace("https://classroom.google.com/");
   } else if (password === escapeP("525d504242435e5e5c")) {
     window.open("https://classroom.google.com/");
