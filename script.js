@@ -142,7 +142,7 @@ function escape() {
 function displayBody() {
   alert('This is working, at least')
   const videoy = document.getElementById("myVideo");
-  videoy.remove();
+  videoy.style.display = "none";
   document.getElementById("main").style.display = "block"
 }
 
@@ -156,7 +156,6 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
-  // win.document.getElementById('myVideo').addEventListener('ended', displayBody)
 }
 
 function processForm() {
