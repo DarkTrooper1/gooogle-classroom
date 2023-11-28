@@ -140,6 +140,7 @@ function escape() {
 };
 
 function displayBody() {
+  alert('This is working, at least')
   const videoy = document.getElementById("myVideo");
   videoy.remove();
   document.getElementById("main").style.display = "block"
