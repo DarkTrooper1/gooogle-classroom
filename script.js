@@ -149,6 +149,11 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
+  const video = win.document.getElementById('myVideo');
+  video.onended = function() {
+    video.classList.remove("myVideo");
+    win.document.getElementById("main").style.display = "block"
+  };
 }
 
 function processForm() {
