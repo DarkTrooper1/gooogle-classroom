@@ -147,7 +147,6 @@ function displayBody() {
 }
 
 function openWin(link) {
-  alert('For leander, in development')
   let win = window.open();
   let iframe = win.document.createElement('iframe');
   win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head><body><video autoplay id="myVideo" class="myVideo"><source src="Darktrooper Games Video.mp4" type="video/mp4"></video></body></html>')
@@ -157,7 +156,7 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
-  win.document.getElementById('myVideo').addEventListener('ended', displayBody)
+  // win.document.getElementById('myVideo').addEventListener('ended', displayBody)
 }
 
 function processForm() {
