@@ -236,10 +236,6 @@ form
   color: green;
 }
 
-video {
-  display: none;
-}
-
 .myVideo {
   display: block;
   max-width: 100vw;
