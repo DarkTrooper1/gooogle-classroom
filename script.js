@@ -155,7 +155,7 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
-  win.document.getElementById('myVideo').addEventListener('ended', displayBody)
+  win.document.getElementById('myVideo').addEventListener('ended', displayBody())
 }
 
 function processForm() {
