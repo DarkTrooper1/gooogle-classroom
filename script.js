@@ -151,7 +151,7 @@ function openWin(link) {
   win.document.body.appendChild(iframe);
   const video = win.document.getElementById('myVideo');
   video.onended = function() {
-    video.classList.remove("myVideo");
+    video.remove();
     win.document.getElementById("main").style.display = "block"
   };
 }
