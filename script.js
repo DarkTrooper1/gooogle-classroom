@@ -139,6 +139,12 @@ function escape() {
   window.open("https://classroom.google.com/");
 };
 
+function displayBody() {
+  const videoy = document.getElementById("myVideo");
+  videoy.remove();
+  document.getElementById("main").style.display = "block"
+}
+
 function openWin(link) {
   let win = window.open();
   let iframe = win.document.createElement('iframe');
@@ -149,11 +155,7 @@ function openWin(link) {
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
-  const video = win.document.getElementById('myVideo');
-  video.onended = function() {
-    video.remove();
-    win.document.getElementById("main").style.display = "block"
-  };
+  win.document.getElementById('myVideo').addEventListener('ended', displayBody)
 }
 
 function processForm() {
