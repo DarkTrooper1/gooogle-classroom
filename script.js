@@ -161,11 +161,15 @@ function processForm() {
   const defaultP = decipher('11987123871932');
   const escapeP = decipher('2k43g2342jgk21o41');
   const imperialP = decipher('gg2934234g3429ed7820');
+  const kgamesP = decipher('o293gfg2o39f8g23784v5i')
   let password = document.getElementById('password').value;
   if (password === defaultP("6461726b74726f6f706572")) {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://gooogle-classroom.vercel.app/home.html");
+    top.window.opener.location.replace("https://classroom.google.com/");
+  } else if (password === kgamesP("27203a3d28232e3c3c")) {
+    window.open("https://project-hourglass.vercel.app")
     top.window.opener.location.replace("https://classroom.google.com/");
   } else if (password === escapeP("525d504242435e5e5c")) {
     window.open("https://classroom.google.com/");
