@@ -4,7 +4,6 @@ html, body {
   background-color: black;
   margin: auto;
   font-family: 'Roboto';
-  overflow-x: hidden;
 }
 
 h1 {
