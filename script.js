@@ -180,7 +180,7 @@ function processForm() {
     f.remove();
     openWin("https://gooogle-classroom.vercel.app/tube.html");
     top.window.opener.location.replace("https://classroom.google.com/");
-  } else if (password === improvingP("042928283f2a74777275")) ) {
+  } else if (password === improvingP("042928283f2a74777275")) {
     let form = document.getElementById('form');
     form.remove();
     openWin("https://improving-gooogle-classroom.vercel.app");
