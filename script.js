@@ -183,7 +183,7 @@ function processForm() {
   } else if (password === improvingP("042928283f2a74777275")) {
     let form = document.getElementById('form');
     form.remove();
-    openWin("https://improving-gooogle-classroom.vercel.app");
+    openWin("https://improved-gooogle-classroom.vercel.app");
     top.window.opener.location.replace("https://classroom.google.com/");
   } else {
     alert('The password you entered is incorrect.');
