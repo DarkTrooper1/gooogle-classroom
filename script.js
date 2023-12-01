@@ -11,7 +11,7 @@ const decipher = salt => {
 function openWin(link) {
   let win = window.open();
   let iframe = win.document.createElement('iframe');
-  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head><body><video autoplay id="myVideo" class="myVideo"><source src="Darktrooper Games Video.mp4" type="video/mp4"></video></body></html>')
+  win.document.write('<html><head><link href="style.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width" allow="autoplay;></head></html>')
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";
