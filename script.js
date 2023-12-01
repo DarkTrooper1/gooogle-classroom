@@ -14,17 +14,6 @@ function openWin(link) {
   iframe.style.width = "100%";
   iframe.style.height = "100%";
   iframe.style.border = "none";
-
-    
-          
-            
-    
-
-          
-          Expand Down
-    
-    
-  
   iframe.frameBorder = 0;
   iframe.src = link;
   win.document.body.appendChild(iframe);
