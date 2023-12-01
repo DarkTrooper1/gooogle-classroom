@@ -1,7 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: black;
+  background-color: black;
   margin: auto;
   font-family: 'Roboto';
   overflow-x: hidden;
