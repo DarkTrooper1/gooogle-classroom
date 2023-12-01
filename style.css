@@ -1,1 +1,12 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: black;
+  margin: auto;
+  font-family: 'Roboto';
+  overflow-x: hidden;
+}
 
+h1 {
+  color: blue;
+}
