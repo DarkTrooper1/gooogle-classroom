@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="homeHTML">
 
 <head>
   <meta charset="utf-8">
@@ -9,8 +9,26 @@
   <link rel="icon" href="classroomIcon.ico">
 </head>
 
-<body>
+<body class="homeHTML">
   <script src="script.js"></script>
-  <h1>Hello world</h1>
+  <div id="header" class="header">
+    <h1 id="title">Darktrooper Games</h1>
+  </div>
+  <div class="wrapper">
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <li><a id="Drive Mad" onclick="changeGame('Drive Mad')">Drive Mad</a></li>
+        <li><a id="Getaway Shootout" onclick="changeGame('Getaway Shootout')">Getaway Shootout</a></li>
+        <li><a id="Rooftop Snipers" onclick="changeGame('Rooftop Snipers')">Rooftop Snipers</a></li>
+        <li><a id="10 Minutes Till Dawn" onclick="changeGame('10 Minutes Till Dawn')">10 Minutes Till Dawn</a></li>
+      </ul>
+    </div>
+    
+    <div id="main" class="main">
+      <p id="introText" class="introText">Welcome to my website! I hope you like it.</p>
+      <iframe class="gameIframe" id="gameIframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
 </body>
 </html>
