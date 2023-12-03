@@ -1,12 +1,146 @@
+/* Password Page */
+
 html, body {
-  height: 100%;
-  width: 100%;
-  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  background-color: #0088ff;
   margin: auto;
-  font-family: 'Roboto';
+  font-family: 'Open Sans';
+  overflow-x: hidden;
 }
 
-h1 {
+.passwordHTML {
+  background-image: url("sitephoto.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.passwordForm  {
+  line-height: 25px;
+  padding-top: 75px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  box-shadow: 0px 0px 5px #ffffff;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+  background-color: #ffffff;
+  background: rgba(255,255, 255, 0.5);
+}
+
+.passwordFormLabel {
   color: blue;
-  text-allign: center;
+  font-size: 18px;
+}
+
+#password {
+  width: 190px;
+  height: 30px;
+  border-radius: 25px;
+  text-align: center;
+  border-width: 0px;
+  background-color: #ffffff;
+  
+}
+
+.submit {
+  width: 190px;
+  height: 35px;
+  border-width: 0px;
+  border-radius: 25px;
+  background-color: #0000ff;
+  color: white;
+}
+
+/* Home Page */
+
+/* Header */
+
+.header {
+  border-bottom: 3px solid white;
+  height: 60px;
+  width: 100vw;
+}
+
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+/* Wrapper */
+
+.wrapper {
+  overflow: hidden;
+}
+
+/* Sidebar  */
+
+.sidebar {
+  overflow-x: hidden;
+  border-top: 0.00000001px solid white;
+  border-right: 3px solid white;
+  width: 200px;
+  height: 100vh;
+  float:left;
+}
+
+ul {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #0088ff;
+  height: 100%;
+  overflow: auto;
+}
+
+li a {
+  overflow-x: hidden;
+  text-align: left;
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  width: 168px;
+  height: 20px;
+}
+
+li a:hover {
+  border-radius: 10px;
+  background-color: #0061bd;
+  color: white;
+}
+
+.active {
+  background-color: #00009b;
+  border-radius: 10px;
+}
+
+.active:hover {
+  background-color: #0049a8;
+}
+
+/* Main */
+
+.main {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.gameIframe {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.introText {
+  color: white;
+  padding-left: 10px;
 }
