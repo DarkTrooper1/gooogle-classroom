@@ -119,6 +119,7 @@ li a:hover {
   border-radius: 10px;
   background-color: #0061bd;
   color: white;
+  cursor: default;
 }
 
 .active {
