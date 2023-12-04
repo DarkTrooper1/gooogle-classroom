@@ -48,15 +48,15 @@ function processForm() {
 let menuPlacement = 0;
 function displayMenu() {
   let sidebar = document.getElementById('sidebar')
-  if (menuPlacement === 0) {
+  if (menuPlacement === 1) {
     sidebar.style.width = '0px';
-    menuPlacement = 1;
-  }
-  else {
-    sidebar.style.width = '200px'
     menuPlacement = 0;
   }
-}
+  else {
+    sidebar.style.width = '200px';
+    menuPlacement = 1;
+  };
+};
 
 // Home Code
 
