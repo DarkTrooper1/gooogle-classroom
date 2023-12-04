@@ -99,7 +99,7 @@ h1 {
   overflow-x: hidden;
   border-top: 0.00000001px solid white;
   border-right: 3px solid white;
-  width: 200px;
+  width: 0px;
   height: 100vh;
   float:left;
   transition: width 1.5s;
