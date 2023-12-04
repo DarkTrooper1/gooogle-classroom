@@ -3,10 +3,13 @@
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: #0088ff;
+  background-color: black;
   margin: auto;
   font-family: 'Open Sans';
   overflow-x: hidden;
+  background-image: url("sitephoto.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .passwordHTML {
@@ -67,9 +70,6 @@ html, body {
   width: 100vw;
 }
 
-.darkTitle {
-  color: black;
-}
 
 h1 {
   color: white;
@@ -98,7 +98,7 @@ ul {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: #0088ff;
+  background-color: #0C0032;
   height: 100%;
   overflow: auto;
 }
@@ -110,7 +110,7 @@ li a {
   color: white;
   padding: 16px;
   text-decoration: none;
-  width: 150px;
+  width: 168px;
   height: 20px;
 }
 
@@ -135,6 +135,7 @@ li a:hover {
   display: block;
   height: 100vh;
   overflow: hidden;
+  background-color: #3500D3;
 }
 
 .gameIframe {
@@ -148,7 +149,7 @@ li a:hover {
   padding-left: 10px;
 }
 
-.recommend {
+#recommend {
   color: green;
   font-size: 20px;
 }
