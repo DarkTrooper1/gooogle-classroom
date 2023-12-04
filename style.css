@@ -76,6 +76,17 @@ h1 {
   text-align: center;
 }
 
+.menu {
+  float: left;
+  margin-left: 10px;
+  width: 45px;
+  height: 45px;
+  background-image: url("menu.png");
+  border-width: 3px;
+  border-radius: 10px;
+  background-color: white;
+}
+
 /* Wrapper */
 
 .wrapper {
@@ -85,13 +96,13 @@ h1 {
 /* Sidebar  */
 
 .sidebar {
-  max-width: 100%;
   overflow-x: hidden;
   border-top: 0.00000001px solid white;
   border-right: 3px solid white;
   width: 200px;
   height: 100vh;
   float:left;
+  transition: width 1.5s;
 }
 
 ul {
