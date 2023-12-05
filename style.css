@@ -6,7 +6,7 @@ html, body {
   background-color: #02173d;
   margin: auto;
   font-family: 'Open Sans';
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: url("sitephoto.webp");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -96,7 +96,7 @@ h1 {
 /* Sidebar  */
 
 .sidebar {
-  overflow-x: hidden;
+  overflow: hidden;
   border-top: 0.00000001px solid white;
   border-right: 3px solid white;
   width: 0px;
@@ -106,7 +106,7 @@ h1 {
 }
 
 ul {
-  overflow-x: hidden;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   width: 200px;
@@ -116,7 +116,7 @@ ul {
 }
 
 li a {
-  overflow-x: hidden;
+  overflow: hidden;
   text-align: left;
   display: block;
   color: white;
