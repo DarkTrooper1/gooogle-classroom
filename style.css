@@ -142,6 +142,26 @@ li a:hover {
   background-color: #0049a8;
 }
 
+.catagory:hover {
+  background-color: #031d81;
+}
+
+.bottomCatagory {
+  border-bottom: 0.00000001px solid white;
+}
+
+.catagoryActive {
+  background-color: purple;
+  border-radius: 10px;
+}
+
+.catagoryActive:hover {
+  background-color: #ad00ad;
+}
+
+#gamesList, #scratchList {
+  display: none;
+}
 /* Main */
 
 .main {
