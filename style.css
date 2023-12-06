@@ -3,10 +3,10 @@
 html, body {
   height: 100vh;
   width: 100vw;
-  background-color: #02173d;
+  background-color: #04143a;
   margin: auto;
   font-family: 'Open Sans';
-  overflow: hidden;
+  overflow-x: hidden;
   background-image: url("sitephoto.webp");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -68,6 +68,8 @@ html, body {
   border-bottom: 3px solid white;
   height: 60px;
   width: 100vw;
+  align-items: center;
+  transition: height 2s;
 }
 
 
@@ -96,7 +98,7 @@ h1 {
 /* Sidebar  */
 
 .sidebar {
-  overflow: hidden;
+  overflow-x: hidden;
   border-top: 0.00000001px solid white;
   border-right: 3px solid white;
   width: 0px;
@@ -106,7 +108,7 @@ h1 {
 }
 
 ul {
-  overflow: hidden;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   width: 200px;
@@ -116,7 +118,7 @@ ul {
 }
 
 li a {
-  overflow: hidden;
+  overflow-x: hidden;
   text-align: left;
   display: block;
   color: white;
@@ -131,11 +133,6 @@ li a:hover {
   background-color: #0061bd;
   color: white;
   cursor: default;
-}
-
-.centerGame {
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .active {
@@ -171,14 +168,21 @@ li a:hover {
 
 .main {
   display: block;
-  height: 60vh;
+  height: 100vh;
+  overflow: hidden;
   background-color: #02173d;
+  transition: height 2s;
 }
 
 .gameIframe {
   display: none;
   width: 1000px;
   height: 630px;
+}
+
+.centerGame {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .introText {
