@@ -45,19 +45,6 @@ function processForm() {
   };
 };
 
-let menuPlacement = 0;
-function displayMenu() {
-  let sidebar = document.getElementById('sidebar')
-  if (menuPlacement === 1) {
-    sidebar.style.width = '0px';
-    menuPlacement = 0;
-  }
-  else {
-    sidebar.style.width = '200px';
-    menuPlacement = 1;
-  };
-};
-
 // Home Code
 
 let count = 0;
@@ -84,6 +71,22 @@ function changeGame(game) {
   let element = document.getElementById(game);
   element.classList.add('active');
 }
+
+let menuPlacement = 0;
+function displayMenu() {
+  let sidebar = document.getElementById('sidebar')
+  if (menuPlacement === 1) {
+    sidebar.style.width = '0px';
+    menuPlacement = 0;
+    document.getElementById('gameIframe').classList.add('centerGame');
+  }
+  else {
+    sidebar.style.width = '200px';
+    menuPlacement = 1;
+    document.getElementById('gameIframe').classList.remove('centerGame');
+  };
+};
+
 
 function changeListTo(list) {
   document.getElementById('gamesList').style.display = 'none';
