@@ -1,16 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html class="homeHTML">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJEYT7CSQB"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-KJEYT7CSQB');
-  </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Home</title>
@@ -18,128 +9,77 @@
   <link rel="icon" href="classroomIcon.ico">
 </head>
 
-<body>
+<body class="homeHTML">
   <script src="script.js"></script>
-  <video autoplay muted id="myVideo" class="myVideo" onended="displayBody()">
-    <source src="Darktrooper Games Video.mp4" type="video/mp4">
-  </video>
-  <div id="main">
-    <ul>
-      <div id="Home">
-        <div class="dropdown">
-          <div class="dropdownBtn">
-            <li><a>Home <small>▼</small></a></li>
-          </div>
-          <div class="dropdownContent">
-            <a onclick="changeTo('Home')">Home</a>
-            <a onclick="changeTo('Scratch')">Scratch</a>
-            <a onclick="changeTo('Other')">Games</a>
-            <a onclick="changeTo('Youtube')">Youtube</a>
-          </div>
+  <div id="header" class="header">
+    <h1><img src="menu.png" class="menu" onclick="displayMenu()"><span id="title">Darktrooper Games</span></h1>
+  </div>
+  
+  <div class="wrapper">
+    <div id="sidebar" class="sidebar">
+      <ul>
+        <div id="catagoriesList">
+          <li><a id="gamesListCatagory" class="catagory" onclick="changeListTo('gamesList')"><b>Games</b></a></li>
+          <li><a id="scratchListCatagory" class="catagory bottomCatagory" onclick="changeListTo('scratchList')"><b>Scratch</b></a></li>
         </div>
-        <li><a id="googleForm" onclick="googleForm()">Game Recommendations</a></li>
-        <li><a onclick="escape()" class="escape">Classroom</a></li>
-      </div>
-      <div id="Scratch">
-        <div class="dropdown">
-          <div class="dropdownBtn">
-            <li><a>Scratch <small>▼</small></a></li>
-          </div>
-          <div class="dropdownContent">
-            <a onclick="changeTo('Home')">Home</a>
-            <a onclick="changeTo('Scratch')">Scratch</a>
-            <a onclick="changeTo('Other')">Games</a>
-            <a onclick="changeTo('Youtube')">Youtube</a>
-          </div>
+        <div id="gamesList">
+          <li><a id="Learn To Fly" onclick="changeGame('Learn To Fly')">Learn To Fly</a></li>
+          <li><a id="Awesome Tanks 2" onclick="changeGame('Awesome Tanks 2')">Awesome Tanks 2</a></li>
+          <li><a id="Neon Rocket" onclick="changeGame('Neon Rocket')">Neon Rocket</a></li>
+          <li><a id="Slope" onclick="changeGame('Slope')">Slope</a></li>
+          <li><a id="Paper io" onclick="changeGame('Paper io')">Paper io</a></li>
+          <li><a id="Retro Bowl" onclick="changeGame('Retro Bowl')">Retro Bowl</a></li>
+          <li><a id="Getaway Shootout" onclick="changeGame('Getaway Shootout')">Getaway Shootout</a></li>
+          <li><a id="Rooftop Snipers" onclick="changeGame('Rooftop Snipers')">Rooftop Snipers</a></li>
+          <li><a id="Basketball Stars" onclick="changeGame('Basketball Stars')">Basketball Stars</a></li>
+          <li><a id="2048" onclick="changeGame('2048')">2048</a></li>
+          <li><a id="Death Run 3D" onclick="changeGame('Death Run 3D')">Death Run 3D</a></li>
+          <li><a id="Motox3m Winter" onclick="changeGame('Motox3m Winter')">Motox3m Winter</a></li>
+          <li><a id="Motox3m Spooky" onclick="changeGame('Motox3m Spooky')">Motox3m Spooky</a></li>
+          <li><a id="Motox3m Pool" onclick="changeGame('Motox3m Pool')">Motox3m Pool</a></li>
+          <li><a id="1v1.lol" onclick="changeGame('1v1.lol')">1v1.lol</a></li>
+          <li><a id="Among Us" onclick="changeGame('Among Us')">Among Us</a></li>
+          <li><a id="Trimps" onclick="changeGame('Trimps')">Trimps</a></li>
+          <li><a id="Crossy Road" onclick="changeGame('Crossy Road')">Crossy Road</a></li>
+          <li><a id="Jetpack Joyride" onclick="changeGame('Jetpack Joyride')">Jetpack Joyride</a></li>
+          <li><a id="Madalin Stunt Cars 2" onclick="changeGame('Madalin Stunt Cars 2')">Madalin Stunt Cars 2</a></li>
+          <li><a id="Subway Surfers" onclick="changeGame('Subway Surfers')">Subway Surfers</a></li>
+          <li><a id="Drive Mad" onclick="changeGame('Drive Mad')">Drive Mad</a></li>
+          <li><a id="Rocket Leauge" onclick="changeGame('Rocket Leauge')">Rocket Leauge</a></li>
+          <li><a id="10 Minutes Till Dawn" onclick="changeGame('10 Minutes Till Dawn')">10 Minutes Till Dawn</a></li>
+          <li><a id="Papas Burgeria" onclick="changeGame('Papas Burgeria')">Papas Burgeria</a></li>
+          <li><a id="Papas Pizzaria" onclick="changeGame('Papas Pizzaria')">Papas Pizzaria</a></li>
         </div>
-        <li><a id="Appel" onclick="changeScratchGame('Appel')">Appel</a></li>
-        <li><a id="Desert Appel" onclick="changeScratchGame('Desert Appel')">Desert Appel</a></li>
-        <li><a id="Volcano Appel" onclick="changeScratchGame('Volcano Appel')">Volcano Appel</a></li>
-        <li><a id="Heat Appel" onclick="changeScratchGame('Heat Appel')">Heat Appel</a></li>
-        <li><a id="Minecraft Appel" onclick="changeScratchGame('Minecraft Appel')">Minecraft Appel</a></li>
-        <li><a id="Space Appel" onclick="changeScratchGame('Space Appel')">Space Appel</a></li>
-        <li><a id="Arena" onclick="changeScratchGame('Arena')">Arena</a></li>
-        <li><a id="Getting Over It" onclick="changeScratchGame('Getting Over It')">Getting Over It</a></li>
-        <li><a id="Moon Gravity" onclick="changeScratchGame('Moon Gravity')">Moon Gravity</a></li>
-        <li><a id="Massive Multiplayer" onclick="changeScratchGame('Massive Multiplayer')">Massive Multiplayer</a></li>
-        <li><a id="9-13" onclick="changeScratchGame('9-13')">9-13</a></li>
-        <li><a id="14-15" onclick="changeScratchGame('14-15')">14-15</a></li>
-        <li><a id="Meltdown" onclick="changeScratchGame('Meltdown')">Meltdown</a></li>
-        <li><a id="Subzero" onclick="changeScratchGame('Subzero')">Subzero</a></li>
-        <li><a id="World" onclick="changeScratchGame('World')">World</a></li>
-        <li><a id="Infinite Bunner" onclick="changeScratchGame('Infinite Bunner')">Infinite Bunner</a></li>
-        <li><a id="Bionic Blitz" onclick="changeScratchGame('Bionic Blitz')">Bionic Blitz</a></li>
-        <li><a id="Five Nights At Freddys" onclick="changeScratchGame('Five Nights At Freddys')">Five Nights At Freddy's</a></li>
-        <li><a id="Paper Minecraft" onclick="changeScratchGame('Paper Minecraft')">Paper Minecraft</a></li>
-        <li><a onclick="escape()" class="escape">Classroom</a></li>
-      </div>
-      <div id="Other">
-        <div class="dropdown">
-          <div class="dropdownBtn">
-            <li><a>Games <small>▼</small></a></li>
-          </div>
-          <div class="dropdownContent">
-            <a onclick="changeTo('Home')">Home</a>
-            <a onclick="changeTo('Scratch')">Scratch</a>
-            <a onclick="changeTo('Other')">Games</a>
-            <a onclick="changeTo('Youtube')">Youtube</a>
-          </div>
+        <div id="scratchList">
+          <li><a id="Appel" onclick="changeScratch('Appel')">Appel</a></li>
+          <li><a id="Desert Appel" onclick="changeScratch('Desert Appel')">Desert Appel</a></li>
+          <li><a id="Volcano Appel" onclick="changeScratch('Volcano Appel')">Volcano Appel</a></li>
+          <li><a id="Heat Appel" onclick="changeScratch('Heat Appel')">Heat Appel</a></li>
+          <li><a id="Minecraft Appel" onclick="changeScratch('Minecraft Appel')">Minecraft Appel</a></li>
+          <li><a id="Space Appel" onclick="changeScratch('Space Appel')">Space Appel</a></li>
+          <li><a id="Arena" onclick="changeScratch('Arena')">Arena</a></li>
+          <li><a id="Getting Over It" onclick="changeScratch('Getting Over It')">Getting Over It</a></li>
+          <li><a id="Moon Gravity" onclick="changeScratch('Moon Gravity')">Moon Gravity</a></li>
+          <li><a id="Massive Multiplayer" onclick="changeScratch('Massive Multiplayer')">Massive Multiplayer</a></li>
+          <li><a id="9-13" onclick="changeScratch('9-13')">9-13</a></li>
+          <li><a id="14-15" onclick="changeScratch('14-15')">14-15</a></li>
+          <li><a id="Meltdown" onclick="changeScratch('Meltdown')">Meltdown</a></li>
+          <li><a id="Subzero" onclick="changeScratch('Subzero')">Subzero</a></li>
+          <li><a id="World" onclick="changeScratch('World')">World</a></li>
+          <li><a id="Infinite Bunner" onclick="changeScratch('Infinite Bunner')">Infinite Bunner</a></li>
+          <li><a id="Bionic Blitz" onclick="changeScratch('Bionic Blitz')">Bionic Blitz</a></li>
+          <li><a id="Five Nights At Freddys" onclick="changeScratch('Five Nights At Freddys')">Five Nights At Freddy's</a></li>
+          <li><a id="Paper Minecraft" onclick="changeScratch('Paper Minecraft')">Paper Minecraft</a></li>
         </div>
-        <li><a id="Learn To Fly" onclick="changeOtherGame('Learn To Fly')">Learn To Fly</a></li>
-        <li><a id="Awesome Tanks 2" onclick="changeOtherGame('Awesome Tanks 2')">Awesome Tanks 2</a></li>
-        <li><a id="Neon Rocket" onclick="changeConstructGame('Neon Rocket')">Neon Rocket</a></li>
-        <li><a id="Slope" onclick="changeOtherGame('Slope')">Slope</a></li>
-        <li><a id="Paper io" onclick="changeOtherGame('Paper io')">Paper io</a></li>
-        <li><a id="Retro Bowl" onclick="changeOtherGame('Retro Bowl')">Retro Bowl</a></li>
-        <li><a id="Getaway Shootout" onclick="changeOtherGame('Getaway Shootout')">Getaway Shootout</a></li>
-        <li><a id="Rooftop Snipers" onclick="changeOtherGame('Rooftop Snipers')">Rooftop Snipers</a></li>
-        <li><a id="Basketball Stars" onclick="changeOtherGame('Basketball Stars')">Basketball Stars</a></li>
-        <li><a id="2048" onclick="changeOtherGame('2048')">2048</a></li>
-        <li><a id="Death Run 3D" onclick="changeOtherGame('Death Run 3D')">Death Run 3D</a></li>
-        <li><a id="Motox3m Winter" onclick="changeOtherGame('Motox3m Winter')">Motox3m Winter</a></li>
-        <li><a id="Motox3m Spooky" onclick="changeOtherGame('Motox3m Spooky')">Motox3m Spooky</a></li>
-        <li><a id="Motox3m Pool" onclick="changeOtherGame('Motox3m Pool')">Motox3m Pool</a></li>
-        <li><a id="1v1.lol" onclick="changeOtherGame('1v1.lol')">1v1.lol</a></li>
-        <li><a id="Among Us" onclick="changeOtherGame('Among Us')">Among Us</a></li>
-        <li><a id="Trimps" onclick="changeOtherGame('Trimps')">Trimps</a></li>
-        <li><a id="Crossy Road" onclick="changeOtherGame('Crossy Road')">Crossy Road</a></li>
-        <li><a id="Jetpack Joyride" onclick="changeOtherGame('Jetpack Joyride')">Jetpack Joyride</a></li>
-        <li><a id="Madalin Stunt Cars 2" onclick="changeOtherGame('Madalin Stunt Cars 2')">Madalin Stunt Cars 2</a></li>
-        <li><a id="Subway Surfers" onclick="changeOtherGame('Subway Surfers')">Subway Surfers</a></li>
-        <li><a id="Drive Mad" onclick="changeOtherGame('Drive Mad')">Drive Mad</a></li>
-        <li><a id="Rocket Leauge" onclick="changeOtherGame('Rocket Leauge')">Rocket Leauge</a></li>
-        <li><a id="10 Minutes Till Dawn" onclick="changeOtherGame('10 Minutes Till Dawn')">10 Minutes Till Dawn</a></li>
-        <li><a id="Papas Burgeria" onclick="changeOtherGame('Papas Burgeria')">Papas Burgeria</a></li>
-        <li><a id="Papas Pizzaria" onclick="changeOtherGame('Papas Pizzaria')">Papas Pizzaria</a></li>
-        <li><a onclick="escape()" class="escape">Classroom</a></li>
-      </div>
-      <div id="Youtube">
-        <div class="dropdown">
-          <div class="dropdownBtn">
-            <li><a>Youtube <small>▼</small></a></li>
-          </div>
-          <div class="dropdownContent">
-            <a onclick="changeTo('Home')">Home</a>
-            <a onclick="changeTo('Scratch')">Scratch</a>
-            <a onclick="changeTo('Other')">Games</a>
-            <a onclick="changeTo('Youtube')">Youtube</a>
-          </div>
-        </div>
-        <li><a id="youtubeUnblker" onclick="formVisible()">Youtube Unblker</a></li>
-        <li><a onclick="escape()" class="escape">Classroom</a></li>
-      </div>
-    </ul>
-    <h1 id="title">Welcome to Darktrooper Games!</h1>
-    <p id="introText" class="introText"><b class="recommend">Please recommend this site to all of your friends!</b><br><br><b>How the website works - PLEASE READ:</b><br><br>Before you dive in to using this website, please consider all of its aspects. When you were given the link to this website, and every time you come back to it, it will show up in your history - as google classroom of course. The link to this site itself if completely invisible - if you look at the title and URL of this page, they are about:blank, which does not show up in history. But to make it even more masked, when you click on a game, you will see that it reloads the first page to the real google classroom, and removes the link to the origional site from your history completely. <br><br><b>Useful functions of the site - PLEASE READ:</b><br><br>If a teacher is suspicious of what the web page with the password entry is, then you can say that it was simply a coding exercise and you can enter "classroom" as your password. This will then open up google classroom and not the games website. Finally, in the nav bar is an escape button. If someone is about to come past, you can press this button and you will be brought to google classroom as well.<br><br>Thank you for reading. Have fun! (If you have any suggestions for games I could feasibly add to the site, then please do contact me - I love the feedback!)<br><br><b>Credit to 3kh0 for many of the games!</b></p>
-    <div id="youtubeForm">
-      <p id="youtubePrompt">Enter YouTube link here: </p>
-      <input type="text" id="youtubeLink" required>
-      <br><br>
-      <button id="submitYoutube" onclick="youtubeUnblker()">Submit URL</button>
+      </ul>
     </div>
-    <button onclick="fullscreen()" id="fullscreen">Press to open in fullscreen</button><br>
-    <iframe id="gameIframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    <br>
+    
+    <div id="main" class="main">
+      <p id="introText" class="introText"><b class="recommend">Please recommend this site to all of your friends!</b><br><br><b>How the website works - PLEASE READ:</b><br><br>Before you dive in to using this website, please consider all of its aspects. When you were given the link to this website, and every time you come back to it, it will show up in your history - as google classroom of course. The link to this site itself if completely invisible - if you look at the title and URL of this page, they are about:blank, which does not show up in history. But to make it even more masked, when you click on a game, you will see that it reloads the first page to the real google classroom, and removes the link to the origional site from your history completely. <br><br><b>Useful functions of the site - PLEASE READ:</b><br><br>If a anyone is suspicious of what the web page with the password entry is, then you can say that it was simply a coding exercise and you can enter "classroom" as your password. This will then open up google classroom and not the games website.<br><br>Thank you for reading. Have fun! (If you have any suggestions for games I could feasibly add to the site, then please do contact me - I love the feedback!)<br><br><b>Credit to 3kh0 for many of the games!</b></p>
+      <iframe class="gameIframe" id="gameIframe" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen>
+      </iframe>
+      <br><br>
+    </div>
   </div>
 </body>
 </html>
