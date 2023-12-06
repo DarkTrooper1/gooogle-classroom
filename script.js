@@ -84,7 +84,7 @@ function changeScratch(game) {
 
   title.innerHTML = game;
   introText.style.display = 'none';
-  gameIframe.src = 'https://'.concat(scratchWeb(), scratchDict[game], '/embed');
+  gameIframe.src = 'https://scratch.mit.edu/projects/'.concat(scratchDict[game], '/embed');
   gameIframe.style.display = 'block';
 
   let items = document.querySelectorAll('a.active');
