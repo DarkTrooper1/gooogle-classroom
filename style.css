@@ -171,8 +171,7 @@ li a:hover {
 
 .main {
   display: block;
-  height: 100vh;
-  overflow: hidden;
+  height: 95vh;
   background-color: #02173d;
 }
 
