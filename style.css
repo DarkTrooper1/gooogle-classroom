@@ -6,7 +6,7 @@ html, body {
   background-color: #02173d;
   margin: auto;
   font-family: 'Open Sans';
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: url("sitephoto.webp");
   background-repeat: no-repeat;
   background-size: 100%;
