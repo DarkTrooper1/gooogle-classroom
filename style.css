@@ -133,6 +133,11 @@ li a:hover {
   cursor: default;
 }
 
+.centerGame {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .active {
   background-color: #00009b;
   border-radius: 10px;
