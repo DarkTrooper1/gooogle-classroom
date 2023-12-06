@@ -84,3 +84,21 @@ function changeGame(game) {
   let element = document.getElementById(game);
   element.classList.add('active');
 }
+
+function changeListTo(list) {
+  document.getElementById('gamesList').style.display = 'none';
+  document.getElementById('scratchList').style.display = 'none';
+  document.getElementById(list).style.display = 'list-item';
+  
+  let items = document.querySelectorAll('a.active');
+  for (let elem of items) {
+    elem.classList.remove('active');
+  };
+  
+  let itemsList = document.querySelectorAll('a.catagoryActive');
+  for (let elem of itemsList) {
+    elem.classList.remove('catagoryActive');
+  };
+  let element = document.getElementById(list + 'Catagory');
+  element.classList.add('catagoryActive');
+}
