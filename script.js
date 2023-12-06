@@ -25,6 +25,7 @@ function processForm() {
   const escapeP = decipher('2k43g2342jgk21o41');
   const imperialP = decipher('gg2934234g3429ed7820');
   const kgamesP = decipher('o293gfg2o39f8g23784v5i')
+  const improvingP = decipher('kq2g93q8rg324g9q8rgb2392')
   let password = document.getElementById('password').value;
   if (password === defaultP('6461726b74726f6f706572')) {
     let form = document.getElementById('passwordForm');
@@ -34,10 +35,6 @@ function processForm() {
     window.open('https://project-hourglass.vercel.app')
   } else if (password === escapeP('525d504242435e5e5c')) {
     window.open('https://classroom.google.com/');
-  } else if (password === imperialP('27312b2a2b3c3b')) {
-    let f = document.getElementById('passwordForm');
-    f.remove();
-    openWin('https://gooogle-classroom.vercel.app/tube.html');
   } else {
     alert('The password you entered is incorrect.');
     let form = document.getElementById('passwordForm');
