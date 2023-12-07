@@ -197,3 +197,10 @@ li a:hover {
   color: green;
   font-size: 20px;
 }
+
+.fullscreenButton {
+  background-color: black;
+  color: white;
+  display: none;
+  height: 20px;
+}
