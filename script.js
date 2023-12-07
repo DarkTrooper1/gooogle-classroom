@@ -132,3 +132,14 @@ function changeListTo(list) {
   let element = document.getElementById(list + 'Catagory');
   element.classList.add('catagoryActive');
 }
+
+function fullscreen() {
+  let gameIframe = document.getElementById('gameIframe');
+  if (gameIframe.requestFullscreen) {
+    gameIframe.requestFullscreen();
+  } else if (gameIframe.webkitRequestFullscreen) { /* Safari */
+    gameIframe.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    gameIframe.msRequestFullscreen();
+  };
+};
