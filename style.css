@@ -201,7 +201,7 @@ li a:hover {
 .fullscreenButton {
   background-color: black;
   color: white;
-  display: block;
+  display: none;
   width: 100vw;
   height: 20px;
   border-width: 0px;
