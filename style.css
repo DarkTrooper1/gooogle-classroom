@@ -202,5 +202,6 @@ li a:hover {
   background-color: black;
   color: white;
   display: none;
+  width: 100vw;
   height: 20px;
 }
