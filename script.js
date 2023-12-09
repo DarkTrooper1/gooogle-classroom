@@ -23,7 +23,6 @@ function openWin(link) {
 function processForm() {
   const defaultP = decipher('11987123871932');
   const escapeP = decipher('2k43g2342jgk21o41');
-  const imperialP = decipher('gg2934234g3429ed7820');
   const kgamesP = decipher('o293gfg2o39f8g23784v5i')
   const improvingP = decipher('kq2g93q8rg324g9q8rgb2392')
   let password = document.getElementById('password').value;
