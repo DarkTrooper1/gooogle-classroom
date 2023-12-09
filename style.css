@@ -179,7 +179,7 @@ li a:hover {
 
 .gameIframe {
   display: none;
-  width: 1000px;
+  width: 100vw;
   height: 630px;
 }
 
