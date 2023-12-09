@@ -56,6 +56,9 @@ function changeGame(game) {
   let introText = document.getElementById('introText');
   let fullscreenButton = document.getElementById('fullscreenButton');
 
+  if (gameDict[game] === '2048/') {
+    document.getElementById('gameIframe').setAttribute("scrolling", "none");
+  }
   fullscreenButton.style.display = 'block';
   title.innerHTML = game;
   introText.style.display = 'none';
