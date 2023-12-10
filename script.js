@@ -137,6 +137,7 @@ function changeListTo(list) {
 
 function fullscreen() {
   let gameIframe = document.getElementById('gameIframe');
+  gameIframe.height = '100vh';
   if (gameIframe.requestFullscreen) {
     gameIframe.requestFullscreen();
   } else if (gameIframe.webkitRequestFullscreen) { /* Safari */
