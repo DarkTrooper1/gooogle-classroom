@@ -36,8 +36,6 @@ function processForm() {
     window.open('https://classroom.google.com/');
   } else {
     alert('The password you entered is incorrect.');
-    let form = document.getElementById('passwordForm');
-    form.remove();
   };
 };
 
