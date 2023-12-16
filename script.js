@@ -67,7 +67,7 @@ function changeGame(game) {
 
 function changeScratch(game) {
   let title = document.getElementById('title');
-  let scratchDict = {'Appel': '60917032', 'Arena': '139025103', '14-15': '306576111', 'Infinite Bunner': '567535145', 'Desert Appel': '489697593', 'Getting Over It': '389464290', 'Heat Appel': '511913555', 'Meltdown': '143663274', 'Minecraft Appel': '678316153', 'Moon Gravity': '423313626', 'Massive Multiplayer': '612229554', 'Subzero': '216343253', 'Volcano Appel': '472031225', 'World': '224236914', 'Space Appel': '574035335', 'Bionic Blitz': '539747811', '9-13': '140185501', 'Five Nights At Freddys': '488211339', 'Paper Minecraft': '10128407'};
+  let scratchDict = {'Appel': '60917032', 'Arena': '139025103', 'GD 14-15': '306576111', 'Infinite Bunner': '567535145', 'Desert Appel': '489697593', 'Getting Over It': '389464290', 'Heat Appel': '511913555', 'GD Meltdown': '143663274', 'Minecraft Appel': '678316153', 'Moon Gravity': '423313626', 'Massive Multiplayer': '612229554', 'GD Subzero': '216343253', 'Volcano Appel': '472031225', 'GD World': '224236914', 'Space Appel': '574035335', 'Bionic Blitz': '539747811', 'GD 9-13': '140185501', 'Five Nights At Freddys': '488211339', 'Paper Minecraft': '10128407'};
   let gameIframe = document.getElementById('gameIframe');
   let introText = document.getElementById('introText');
   let fullscreenButton = document.getElementById('fullscreenButton');
