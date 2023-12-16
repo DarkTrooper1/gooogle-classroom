@@ -23,14 +23,13 @@ function openWin(link) {
 function processForm() {
   const defaultP = decipher('11987123871932');
   const escapeP = decipher('2k43g2342jgk21o41');
-  const kgamesP = decipher('o293gfg2o39f8g23784v5i')
-  const improvingP = decipher('kq2g93q8rg324g9q8rgb2392')
+  const kgamesP = decipher('j872g3rbg8oq289yrbg45h83iug')
   let password = document.getElementById('password').value;
   if (password === defaultP('6461726b74726f6f706572')) {
     let form = document.getElementById('passwordForm');
     form.remove();
     openWin('https://gooogle-classroom.vercel.app/home.html');
-  } else if (password === kgamesP('27203a3d28232e3c3c')) {
+  } else if (password === kgamesP('3b1705021304591e190304111a170505')) {
     window.open('https://project-hourglass.vercel.app')
   } else if (password === escapeP('525d504242435e5e5c')) {
     window.open('https://classroom.google.com/');
