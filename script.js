@@ -12,7 +12,6 @@ const decipher = salt => {
 function openWin(link) {
   let win = window.open();
   let iframe = win.document.createElement('iframe');
-  win.document.title = 'Google Classroom';
   win.document.write("<html><head><link href='style.css' rel='stylesheet' type='text/css' /><meta name='viewport' content='width=device-width'></head></html>")
   iframe.style.width = '100%';
   iframe.style.height = '100%';
