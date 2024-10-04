@@ -28,7 +28,7 @@ function processForm() {
   if (password === defaultP('6461726b74726f6f706572')) {
     let form = document.getElementById('passwordForm');
     form.remove();
-    openWin('https://3khoproject.vercel.app/home.html');
+    openWin('https://project3kho.vercel.app/home.html');
   } else if (password === kgamesP('3b1705021304591e190304111a170505')) {
     window.open('https://project-hourglass.vercel.app')
   } else if (password === escapeP('525d504242435e5e5c')) {
